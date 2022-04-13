@@ -6,13 +6,13 @@
 
 # React portfolio
 
-_35 group website project_
+_35 group personal website project_
 
 This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
-Site published at: https://front-end-by-rimantas.github.io/35-grupe-portfolio/
+Site published at: https://front-end-by-rimantas.github.io/35-grupe-portfolio-personal/
 
-Design: https://react.theme-land.com/theme-five
+Design: https://preview.colorlib.com/theme/personal/
 
 ## Project features
 
@@ -28,3 +28,8 @@ Design: https://react.theme-land.com/theme-five
 ## Authors
 
 Rimantas: [Github](https://github.com/belauzas)
+Kasparas Griškus: [Github](https://github.com/Paskanas)
+Regina Sadeckienė: [Github](https://github.com/reginareg)
+Dovilė Bilkštienė: [Github](https://github.com/Dovile-dote)
+Kristina Leonavičiūtė: [Github](https://github.com/Kristle22)
+Kristina Rudytė: [Github](https://github.com/krikri89)
