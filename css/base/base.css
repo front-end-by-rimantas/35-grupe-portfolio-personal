@@ -1,3 +1,9 @@
+:root {
+    --headerColor: #222;
+    --hooverColor: #8490ff;
+    --mainFont: 'Poppins', sans-serif;
+}
+
 body,
 body * {
     margin: 0;

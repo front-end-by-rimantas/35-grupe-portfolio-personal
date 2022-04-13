@@ -7,11 +7,15 @@
 /* components */
 @import '../components/button.css';
 @import '../components/form.css';
+@import '../components/header.css';
+
+/* fonts */
+@import '../../fonts/Poppins/'
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* HEADER */
-/* enf of HEADER */
+/* end of HEADER */
 
 /* Hero (hero section) */
 /* end of Hero (hero section) */
