@@ -1,7 +1,7 @@
 {
   "name": "35-grupe-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Group poject 'Personal'",
   "main": "index.js",
   "scripts": {
     "dev": "dead-server --port=3008 --host=localhost",
@@ -12,6 +12,26 @@
     {
       "name": "Rimantas",
       "url": "https://github.com/belauzas"
+    },
+    {
+      "name": "Kasparas Griškus",
+      "url": "https://github.com/Paskanas"
+    },
+    {
+      "name": "Regina Sadeckienė",
+      "url": "https://github.com/reginareg"
+    },
+    {
+      "name": "Dovilė Bilkštienė",
+      "url": "https://github.com/Dovile-dote"
+    },
+    {
+      "name": "Kristina Leonavičiūtė",
+      "url": "https://github.com/Kristle22"
+    },
+    {
+      "name": "Kristina Rudytė",
+      "url": "https://github.com/krikri89"
     }
   ],
   "license": "MIT",
