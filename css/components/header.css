@@ -1,4 +1,4 @@
-.container {
+header.container {
   padding: 0;
 }
 .menu {
@@ -23,4 +23,5 @@ a.active {
   float: right;
   font-size: 24px;
   padding: 8px;
+  color: var(--headerColor);
 }
