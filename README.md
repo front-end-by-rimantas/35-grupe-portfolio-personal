@@ -16,14 +16,14 @@ Design: https://preview.colorlib.com/theme/personal/
 
 ## Project features
 
--   Github pages
--   multi-page
--   content rendering with JS
--   carousel
--   fontawesome icons
--   CSS animations
--   CSS import
--   JS import-export
+- Github pages
+- multi-page
+- content rendering with JS
+- carousel
+- fontawesome icons
+- CSS animations
+- CSS import
+- JS import-export
 
 ## Authors
 
