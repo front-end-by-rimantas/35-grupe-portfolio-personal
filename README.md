@@ -4,7 +4,7 @@
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 [![Discord](https://discord.com/api/guilds/571393319201144843/widget.png)](https://discord.gg/dRwW4rw)
 
-# React portfolio
+# Personal portfolio
 
 _35 group personal website project_
 
@@ -16,14 +16,14 @@ Design: https://preview.colorlib.com/theme/personal/
 
 ## Project features
 
--   Github pages
--   multi-page
--   content rendering with JS
--   carousel
--   fontawesome icons
--   CSS animations
--   CSS import
--   JS import-export
+- Github pages
+- multi-page
+- content rendering with JS
+- carousel
+- fontawesome icons
+- CSS animations
+- CSS import
+- JS import-export
 
 ## Authors
 
