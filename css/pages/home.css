@@ -1,12 +1,12 @@
 /* base */
-@import '../base/base.css';
-@import '../base/layout.css';
+@import "../base/base.css";
+@import "../base/layout.css";
 
 /* 3rd-party */
 
 /* components */
-@import '../components/button.css';
-@import '../components/form.css';
+@import "../components/button.css";
+@import "../components/form.css";
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
@@ -32,6 +32,57 @@
 /* end of Testimonials */
 
 /* Plans */
+.center {
+  text-align: center;
+}
+.container > .row {
+  margin-right: 0;
+  padding-right: 0;
+}
+.heading {
+  font-size: 40px;
+  text-align: center;
+  color: #222;
+  margin-top: 20px;
+}
+.heading2 {
+  font-size: 22px;
+  text-align: center;
+  color: #222;
+  margin-top: 20px;
+}
+.text {
+  font-size: 17px;
+  text-align: center;
+  color: #777;
+}
+.center.plan {
+  background-color: #f9f9ff;
+  padding: 40px 20px;
+  margin: 20px 0;
+}
+.plan p:first-of-type {
+  padding-bottom: 30px;
+}
+.plan > p {
+  font-size: 17px;
+  text-align: center;
+  color: #777;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+.circle {
+  display: inline-block;
+  font-size: 36px;
+  text-align: center;
+  color: #222;
+  background-color: #8490ff1a;
+  padding: 15px;
+  height: 140px;
+  width: 140px;
+  border-radius: 100%;
+  border: 30px solid #e2e5ff;
+}
 /* end of Plans */
 
 /* LatestPost */
@@ -40,4 +91,4 @@
 /* Sponsors */
 /* end of Sponsors */
 /* FOOTER */
-/* end of FOOTER */
+/* end of FOOTER */ ;
