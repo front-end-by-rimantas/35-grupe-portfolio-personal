@@ -3,6 +3,8 @@
   --secondary-color: #ffffff;
   --third-color: #f9f9ff;
   --fourth-color: #04091e;
+  --gradient: linear-gradient(90deg, #8490ff 0%, #62bdfc 100%);
+
 }
 body,
 body * {
