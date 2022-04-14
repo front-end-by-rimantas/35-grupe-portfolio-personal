@@ -9,7 +9,6 @@
   text-decoration: none;
   padding: 8px;
   color: var(--headerColor);
-  font-family: var(--mainFont);
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
