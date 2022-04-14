@@ -1,6 +1,6 @@
 :root {
-    --headerColor: #222;
-    --hooverColor: #8490ff;
+  --headerColor: #222;
+  --hooverColor: #8490ff;
   --primary-color: #8096ff;
   --secondary-color: #ffffff;
   --third-color: #f9f9ff;
@@ -20,10 +20,6 @@ body {
     display: inline-block;
     width: 100%;
     font-family: 'Poppins', sans-serif;
-}
-  display: inline-block;
-  width: 100%;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .bg-primary-color {
