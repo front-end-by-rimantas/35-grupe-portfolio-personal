@@ -1,5 +1,14 @@
 header.container {
   padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--secondary-color);
+  z-index: 2;
+}
+.container .row {
+  margin: 20px;
 }
 .menu {
   float: right;
@@ -8,10 +17,11 @@ header.container {
   display: inline-block;
   text-decoration: none;
   padding: 8px;
-  color: var(--headerColor);
+  color: var(--fifth-color);
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
+  transition: color 0.3s ease-in;
 }
 a.active {
   color: var(--hooverColor);
@@ -23,5 +33,5 @@ a.active {
   float: right;
   font-size: 24px;
   padding: 8px;
-  color: var(--headerColor);
+  color: var(--fifth-color);
 }

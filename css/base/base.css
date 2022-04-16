@@ -1,10 +1,10 @@
 :root {
-  --headerColor: #222;
   --hooverColor: #8490ff;
   --primary-color: #8096ff;
   --secondary-color: #ffffff;
   --third-color: #f9f9ff;
   --fourth-color: #04091e;
+  --fifth-color: #222;
   --gradient: linear-gradient(90deg, #8490ff 0%, #62bdfc 100%);
 }
 
@@ -17,9 +17,9 @@ body * {
 }
 
 body {
-    display: inline-block;
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
 }
 
 .bg-primary-color {
