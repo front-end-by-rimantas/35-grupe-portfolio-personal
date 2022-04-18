@@ -4,7 +4,6 @@
   --third-color: #f9f9ff;
   --fourth-color: #04091e;
   --gradient: linear-gradient(90deg, #8490ff 0%, #62bdfc 100%);
-
 }
 body,
 body * {
@@ -33,4 +32,9 @@ body {
 }
 .bg-fourth-color {
   background-color: var(--fourth-color);
+}
+
+.sizing {
+  width: 100%;
+  height: auto;
 }
