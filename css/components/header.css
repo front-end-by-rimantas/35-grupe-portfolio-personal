@@ -24,10 +24,10 @@ header.container {
   transition: color 0.3s ease-in;
 }
 a.active {
-  color: var(--hooverColor);
+  color: var(--primary-color);
 }
 .menu a:hover {
-  color: var(--hooverColor);
+  color: var(--primary-color);
 }
 .fa-bars {
   float: right;
