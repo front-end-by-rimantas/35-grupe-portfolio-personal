@@ -4,7 +4,6 @@
   --third-color: #f9f9ff;
   --fourth-color: #04091e;
   --gradient: linear-gradient(90deg, #8490ff 0%, #62bdfc 100%);
-
 }
 body,
 body * {
@@ -33,4 +32,27 @@ body {
 }
 .bg-fourth-color {
   background-color: var(--fourth-color);
+}
+.section-title {
+  font-size: 45px;
+}
+.section-description {
+  font-size: 22px;
+  color: #888;
+  margin-top: 20px;
+}
+.center {
+  text-align: center;
+}
+.uppercase {
+  font-size: 80px;
+}
+.uppercase-smaller {
+  font-size: 50px;
+}
+.section-smaller {
+  font-size: 27px;
+}
+.section-cost {
+  font-size: 60px;
 }
