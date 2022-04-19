@@ -29,9 +29,9 @@ a.active {
 .menu a:hover {
   color: var(--primary-color);
 }
-.fa-bars {
+.icon {
   float: right;
   font-size: 24px;
   padding: 8px;
-  color: var(--fifth-color);
+  color: #222;
 }
