@@ -1,5 +1,8 @@
 // component imports
 
+import renderLatestpost from '../components/latestPost/latestPostList.js';
+import latestPostData from '../data/latestPostData.js';
+
 // components execution
 
 /* HEADER */
@@ -27,6 +30,9 @@
 /* end of Plans */
 
 /* LatestPost */
+
+renderLatestpost('#latest_blog', latestPostData);
+
 /* end of LatestPost */
 
 /* Sponsors */
