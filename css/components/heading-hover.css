@@ -1,0 +1,23 @@
+.sub-header::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  background-color: var(--fourth-color);
+  height: 0.1em;
+  position: absolute;
+  bottom: -5px;
+  left: 5px;
+  transition: 0.5s;
+}
+
+.sub-header {
+  text-decoration: none;
+  color: var(--fourth-color);
+  padding: 5px;
+  position: relative;
+  width: 0;
+}
+
+.sub-header:hover::before {
+  width: 1.5em;
+}
