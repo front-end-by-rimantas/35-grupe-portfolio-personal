@@ -7,18 +7,14 @@
 /* components */
 @import '../components/button.css';
 @import '../components/form.css';
-@import '../components/hover.css'
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* HEADER */
 /* enf of HEADER */
 
-/* Hero (hero section) */
-/* end of Hero (hero section) */
-
-/* AboutMe */
-/* end of AboutMe */
+/* Page name */
+/* Page name end */
 
 /* OfferedService */
 /* end of OfferedService */
@@ -26,21 +22,11 @@
 /* NumbersCounter */
 /* end of NumbersCounter */
 
-/* LatestFeaturedProjects */
-@import '../components/heading-hover.css';
-/* end of LatestFeaturedProjects */
+/* Plans */
+/* end of Plans */
 
 /* Testimonials */
 /* end of Testimonials */
 
-/* Plans */
-@import '../components/plan.css';
-/* end of Plans */
-
-/* LatestPost */
-/* end of LatestPost */
-
-/* Sponsors */
-/* end of Sponsors */
 /* FOOTER */
 /* end of FOOTER */
