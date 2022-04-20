@@ -1,4 +1,6 @@
 // component imports
+import servicesList from '../components/servicesList/servicesList.js';
+import servicesData from '../data/servicesData.js';
 
 // components execution
 
@@ -12,6 +14,7 @@
 /* end of AboutMe */
 
 /* OfferedService */
+servicesList('#services_block', servicesData);
 /* end of OfferedService */
 
 /* NumbersCounter */
