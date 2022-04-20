@@ -7,9 +7,9 @@ header.container {
   background-color: var(--secondary-color);
   z-index: 2;
 }
-.container .row {
-  margin-bottom: 20px;
-  margin-top: 20px;
+.container .row.nav {
+  margin-bottom: 12px;
+  margin-top: 12px;
 }
 .menu {
   float: right;
