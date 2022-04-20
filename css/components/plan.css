@@ -3,7 +3,7 @@
   font-weight: 600;
   text-align: center;
   color: #222;
-  margin: 20px 0 10px;
+  margin-top: 20px;
 }
 .section-subtitle {
   font-size: 18px;
@@ -13,14 +13,15 @@
   margin-top: 20px;
 }
 .text {
-  font-size: 17px;
+  font-size: 14px;
+  font-weight: 300;
   text-align: center;
   color: #777;
 }
 .section-description {
   background-color: var(--third-color);
-  padding: 40px 20px;
-  margin: 20px 0;
+  padding: 40px 5px;
+  transition: 0.3s;
 }
 .section-description p:first-of-type {
   padding-bottom: 30px;
@@ -41,4 +42,34 @@
   width: 140px;
   border-radius: 100%;
   border: 30px solid #e2e5ff;
+}
+.section-description:hover {
+  background: var(--gradient);
+  transform: scale(1.05);
+  padding: 40px 20px;
+  color: var(--secondary-color);
+  /* z-index: 2; */
+}
+.section-description:hover .circle,
+.section-description:hover .section-subtitle {
+  color: var(--secondary-color);
+  border-color: rgba(255, 255, 255, 0.21);
+}
+.section-description:hover .section-title {
+  display: none;
+}
+.buy-plan {
+  display: none;
+  width: 100%;
+  padding: 10px 50px;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: var(--secondary-color);
+  color: var(--fourth-color);
+  margin-top: 30px;
+}
+.section-description:hover .buy-plan {
+  display: inline-block;
 }
