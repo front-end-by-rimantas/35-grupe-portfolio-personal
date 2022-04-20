@@ -3,7 +3,6 @@
   --secondary-color: #fff;
   --third-color: #f9f9ff;
   --fourth-color: #04091e;
-  --fourth-color-anti: #fff;
   --gradient: linear-gradient(90deg, #8490ff 0%, #62bdfc 100%);
 }
 
@@ -22,15 +21,9 @@ body {
   background-color: var(--secondary-color);
 }
 
-.bg-primary-color {
-  /* background-color: var(--primary-color); */
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(128, 150, 255, 1) 30%,
-    rgba(0, 212, 255, 1) 100%
-  );
+.bg-gradient {
+  background: var(--gradient);
+  color: var(--secondary-color);
 }
 .bg-secondary-color {
   background-color: var(--secondary-color);
@@ -40,12 +33,7 @@ body {
 }
 .bg-fourth-color {
   background-color: var(--fourth-color);
-  color: var(--fourth-color-anti);
-}
-
-.bg-primary-color-gradient {
-  background: var(--gradient);
-  color: var(--fourth-color-anti);
+  color: var(--secondary-color);
 }
 
 .sizing {

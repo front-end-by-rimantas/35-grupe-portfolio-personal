@@ -7,6 +7,7 @@
 /* components */
 @import '../components/button.css';
 @import '../components/form.css';
+@import '../components/hover.css'
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
@@ -27,12 +28,14 @@
 /* end of NumbersCounter */
 
 /* LatestFeaturedProjects */
+@import '../components/heading-hover.css';
 /* end of LatestFeaturedProjects */
 
 /* Testimonials */
 /* end of Testimonials */
 
 /* Plans */
+@import '../components/plan.css';
 /* end of Plans */
 
 /* LatestPost */
