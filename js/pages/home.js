@@ -27,6 +27,7 @@ import latestPostData from '../data/latestPostData.js';
 /* end of Testimonials */
 
 /* Plans */
+renderPlans('#plans_block', plansData);
 /* end of Plans */
 
 /* LatestPost */
