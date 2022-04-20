@@ -1,7 +1,6 @@
 // component imports
 
 import { renderPlans } from '../components/plansList/plansList.js';
-console.log(renderPlans);
 import { plansData } from '../data/plansData.js';
 
 
