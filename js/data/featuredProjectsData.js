@@ -37,4 +37,4 @@ const featuredProjectsData = [
   },
 ];
 
-export default featuredProjectsData;
+export { featuredProjectsData };
