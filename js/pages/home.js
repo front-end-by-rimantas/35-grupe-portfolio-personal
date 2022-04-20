@@ -1,5 +1,6 @@
 // component imports
-
+import featuredProjectsList from '../components/featuredProjectsList.js';
+import featuredProjectsData from '../data/featuredProjectsData.js';
 // components execution
 
 /* HEADER */
@@ -18,6 +19,7 @@
 /* end of NumbersCounter */
 
 /* LatestFeaturedProjects */
+renderFeaturedProjects('#featuredProjects_block', featuredProjectsData);
 /* end of LatestFeaturedProjects */
 
 /* Testimonials */
