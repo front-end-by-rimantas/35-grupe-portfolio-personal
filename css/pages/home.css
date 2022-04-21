@@ -17,6 +17,23 @@
 /* end of HEADER */
 
 /* Hero (hero section) */
+.hero {
+  display: flex;
+  align-items: flex-end;
+  min-height: 50vh;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.center {
+  align-items: center;
+}
 /* end of Hero (hero section) */
 
 /* AboutMe */

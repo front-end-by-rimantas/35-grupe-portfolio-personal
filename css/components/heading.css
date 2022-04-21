@@ -17,6 +17,11 @@ p.section-description {
   font-size: 14px;
   letter-spacing: 2px;
 }
+
+.section-headline.uppercase {
+  text-transform: uppercase;
+}
+
 .center {
   text-align: center;
 }

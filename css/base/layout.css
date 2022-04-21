@@ -155,7 +155,7 @@
   display: inline-block !important;
 }
 
-.row .visible-flex {
+.row.visible-flex {
   display: flex !important;
 }
 
