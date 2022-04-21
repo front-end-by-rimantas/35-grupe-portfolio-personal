@@ -11,6 +11,7 @@ function renderPlans(selector, data) {
         <p class="section-description">${item.offer[1]}</p>
         <p class="section-description">${item.offer[2]}</p>
         <h2 class="section-cost">${item.currency} ${item.price}</h2>
+        <a href="#" class="buy-plan">buy now</a>
       </div>`;
     }
 
