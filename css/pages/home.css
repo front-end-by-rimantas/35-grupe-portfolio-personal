@@ -7,11 +7,12 @@
 /* components */
 @import '../components/button.css';
 @import '../components/form.css';
-@import '../components/hover.css'
+@import '../components/hover.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* HEADER */
+@import '../components/heading.css';
 /* enf of HEADER */
 
 /* Hero (hero section) */
