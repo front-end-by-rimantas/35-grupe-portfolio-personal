@@ -8,12 +8,13 @@
 @import '../components/button.css';
 @import '../components/form.css';
 @import '../components/hover.css';
+@import '../components/heading.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* HEADER */
-@import '../components/heading.css';
-/* enf of HEADER */
+@import '../components/header.css';
+/* end of HEADER */
 
 /* Hero (hero section) */
 /* end of Hero (hero section) */

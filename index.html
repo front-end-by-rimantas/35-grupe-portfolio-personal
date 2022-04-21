@@ -32,7 +32,7 @@
     <!--font-->  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">   
   </head>
 
   <body>
@@ -40,19 +40,22 @@
 
     <!-- HEADER -->
     <header class="container">
-      <div class="row">
+      <div class="row nav">
         <div class="col-12">
           <img src="./img/headerLogo.webp" alt="Logo image" />
-          <nav class="hidden visible-md">
-            <a href="./">Home</a>
+          <nav class="hidden visible-md menu">
+            <a class="active" href="./">Home</a>
             <a href="./pages/about/">About</a>
             <a href="./pages/services/">Services</a>
             <a href="./pages/portfolio/">Portfolio</a>
-            <a href="./">Pricing</a>
+            <a href="./pages/pricing/">Pricing</a>
             <a href="#">Blog</a>
             <a href="#">Pages</a>
-            <a href="#">Contact</a>
+            <a href="./pages/contact/">Contact</a>
           </nav>
+          <a href="#" class="hidden-md icon">
+            <i class="fa-solid fa-bars"></i>
+          </a>
         </div>
       </div>
     </header>
@@ -198,7 +201,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-6 ml-md-3 col-xl-4 ml-xl-4 ">
+        <div class="col-12 col-md-6 ml-md-3 col-xl-4 ml-xl-4">
           <a class="sub-header" href="#">ALL</a>
           <a class="sub-header" href="#">VECTOR</a>
           <a class="sub-header" href="#">RASTER</a>
@@ -209,8 +212,12 @@
       <div class="row">
         <div class="col-12 col-sm-4 latest-projects-block">
           <div class="project-img">
-           <img src="./img/project-img1.webp" alt="Project" class="sizing" /> 
-           <img src="./img/preview-icon.webp" alt="Preview-icon" class="preview-hover">
+            <img src="./img/project-img1.webp" alt="Project" class="sizing" />
+            <img
+              src="./img/preview-icon.webp"
+              alt="Preview-icon"
+              class="preview-hover"
+            />
           </div>
           <h3 class="section-smaller">2D Vinyl Design</h3>
           <p class="section-description center">vector</p>
@@ -225,8 +232,12 @@
         </div>
         <div class="col-12 col-sm-4 latest-projects-block">
           <div class="project-img">
-          <img src="./img/project-img3.webp" alt="Project" class="sizing"/>
-          <img src="./img/preview-icon.webp" alt="Preview-icon" class="preview-hover">
+            <img src="./img/project-img3.webp" alt="Project" class="sizing" />
+            <img
+              src="./img/preview-icon.webp"
+              alt="Preview-icon"
+              class="preview-hover"
+            />
           </div>
           <h3 class="section-smaller">Creative Poster Design</h3>
           <p class="section-description center">Agency</p>
@@ -240,21 +251,31 @@
           <p class="section-description center">Portal</p>
         </div>
         <div class="col-12 col-sm-4 latest-projects-block">
-          <div class="project-img"> 
-          <img src="./img/project-img5.webp" alt="Project" class="sizing"/>
-          <img src="./img/preview-icon.webp" alt="Preview-icon" class="preview-hover">
+          <div class="project-img">
+            <img src="./img/project-img5.webp" alt="Project" class="sizing" />
+            <img
+              src="./img/preview-icon.webp"
+              alt="Preview-icon"
+              class="preview-hover"
+            />
           </div>
           <h3 class="section-smaller">3D Helmet Design</h3>
           <p class="section-description center">vector</p>
         </div>
         <div class="col-12 col-sm-4 latest-projects-block">
           <div class="project-img">
-          <img src="./img/project-img6.webp" alt="Project" class="sizing"/>
-          <img src="./img/preview-icon.webp" alt="Preview-icon" class="preview-hover">
+            <img src="./img/project-img6.webp" alt="Project" class="sizing" />
+            <img
+              src="./img/preview-icon.webp"
+              alt="Preview-icon"
+              class="preview-hover"
+            />
           </div>
           <h3 class="section-smaller">2D Vinyl Design</h3>
           <p class="section-description center">raster</p>
         </div>
+        <h3>2D Vinyl Design</h3>
+        <p>raster</p>
       </div>
     </section>
     <!-- end of LatestFeaturedProjects -->
@@ -285,7 +306,8 @@
           </p>
         </div>
       </div>
-      <div class="row bg-third-color">
+
+     <!-- <div class="row bg-third-color">
         <div class="col-12 col-md-6 col-lg-3 text section-description">
           <span class="circle">01</span>
           <h3 class="section-smaller">Economy</h3>
@@ -321,7 +343,9 @@
           <p class="section-description">Unlimited Styles for interface</p>
           <p class="section-description">Reliable Customer Service</p>
           <h2 class="section-cost">499</h2>
-        </div>
+        </div> -->
+
+      <div id="plans_block" class="row bg-third-color">
       </div>
     </section>
     <!-- end of Plans -->
@@ -337,12 +361,21 @@
             expanding the business
           </p>
         </div>
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <div>
-            <img src="./img/blog-img1.webp" alt="Night town" class="sizing">
-            <a href="#"><img src="./img/blog-author-img.webp" alt="author">Mark Wiens</a>
-            <a href="#">13th Dec  15  04</a>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div>
+              <img src="./img/blog-img1.webp" alt="Night town" class="sizing" />
+              <a href="#"
+                ><img src="./img/blog-author-img.webp" alt="author" />Mark
+                Wiens</a
+              >
+              <a href="#">13th Dec 15 04</a>
+            </div>
+            <h4>BREAK THROUGH SELF DOUBT AND FEAR</h4>
+            <p>
+              Dream interpretation has many forms; it can be done be done for
+              the sake of fun, hobby or can be taken up as a serious career.
+            </p>
           </div>
           <h4 class="section-smaller">BREAK THROUGH SELF DOUBT AND FEAR</h4>
           <p class="section-description">Dream interpretation has many forms; it can be done be done for the sake of fun, hobby or can be taken up as a serious career.</p>
@@ -365,6 +398,7 @@
           <h4 class="section-smaller">DO DREAMS SERVE AS A PREMONITION</h4>
           <p class="section-description">So many of us are demotivated to achieve anything. Such people are not enthusiastic about anything. They don’t want to work involved.</p>
         </div>
+      </div>
     </section>
     <!-- end of LatestPost -->
 
@@ -410,6 +444,6 @@
     </footer>
     <!-- end of FOOTER -->
 
-    <script src="./js/pages/home.js"></script>
+    <script src="./js/pages/home.js" type="module" defer></script>
   </body>
 </html>
