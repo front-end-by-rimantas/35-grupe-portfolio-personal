@@ -1,4 +1,13 @@
 // component imports
+// import servicesList from '../components/servicesList/servicesList.js';
+// import servicesData from '../data/servicesData.js';
+
+// import renderLatestpost from '../components/latestPost/latestPostList.js';
+// import latestPostData from '../data/latestPostData.js';
+
+// import { renderPlans } from '../components/plansList/plansList.js';
+// import { plansData } from '../data/plansData.js';
+
 import featuredProjectsList from '../components/featuredProjectsList.js';
 import featuredProjectsData from '../data/featuredProjectsData.js';
 // components execution
