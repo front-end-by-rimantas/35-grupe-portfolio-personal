@@ -1,4 +1,4 @@
-function renderFeaturedProjects(selector, data) {
+function featuredProjectsList(selector, data) {
   const DOM = document.querySelector(selector);
   let HTML = '';
   for (const item of data) {
@@ -18,4 +18,4 @@ function renderFeaturedProjects(selector, data) {
   }
   DOM.innerHTML = HTML;
 }
-export { renderFeaturedProjects };
+export { featuredProjectsList };

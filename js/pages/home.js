@@ -8,8 +8,8 @@
 // import { renderPlans } from '../components/plansList/plansList.js';
 // import { plansData } from '../data/plansData.js';
 
-import featuredProjectsList from '../components/featuredProjectsList.js';
-import featuredProjectsData from '../data/featuredProjectsData.js';
+import { featuredProjectsList } from '../components/featuredProjectsList.js';
+import { featuredProjectsData } from '../data/featuredProjectsData.js';
 // components execution
 
 /* HEADER */
@@ -28,7 +28,7 @@ import featuredProjectsData from '../data/featuredProjectsData.js';
 /* end of NumbersCounter */
 
 /* LatestFeaturedProjects */
-renderFeaturedProjects('#featuredProjects_block', featuredProjectsData);
+featuredProjectsList('#featuredProjects_block', featuredProjectsData);
 /* end of LatestFeaturedProjects */
 
 /* Testimonials */
