@@ -8,8 +8,7 @@ header.container {
   height: 70px;
 }
 .container .row.nav {
-  margin-bottom: 12px;
-  margin-top: 12px;
+  margin-top: 20px;
 }
 .menu {
   float: right;
