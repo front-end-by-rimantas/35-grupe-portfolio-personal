@@ -2,6 +2,10 @@
 import servicesList from '../components/servicesList/servicesList.js';
 import servicesData from '../data/servicesData.js';
 
+import { renderPlans } from '../components/plansList/plansList.js';
+import { plansData } from '../data/plansData.js';
+
+
 // components execution
 
 /* HEADER */
@@ -27,6 +31,7 @@ servicesList('#services_block', servicesData);
 /* end of Testimonials */
 
 /* Plans */
+renderPlans('#plans_block', plansData);
 /* end of Plans */
 
 /* LatestPost */
