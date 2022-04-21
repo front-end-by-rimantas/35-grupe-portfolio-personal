@@ -28,10 +28,13 @@ p.section-description {
 .left {
   text-align: left;
 }
-.section-title.uppercase {
+.section-title-uppercase {
   font-size: 60px;
   font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 40px;
   text-align: left;
+  text-transform: uppercase;
 }
 h2.uppercase-smaller {
   font-size: 36px;
@@ -39,14 +42,13 @@ h2.uppercase-smaller {
   font-weight: 600;
   line-height: 1.2em;
   text-align: left;
+  text-transform: uppercase;
 }
 .section-smaller {
   font-size: 18px;
   font-family: 'Poppins', sans-serif;
 }
-/* .service.section-description {
-  text-align: center;
-}*/
+
 @media only screen and (max-width: 900px) {
   .section-title.uppercase {
     font-size: 30px;

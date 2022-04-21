@@ -20,15 +20,18 @@
 .hero {
   display: flex;
   align-items: flex-end;
-  min-height: 50vh;
+  min-height: 80vh;
 }
 
-.no-padding-bottom {
+.container.no-padding-bottom {
   padding-bottom: 0;
 }
 
-.no-margin-bottom {
+.row.no-margin-bottom {
   margin-bottom: 0;
+}
+.margin-bottom-20 {
+  margin-bottom: 140px;
 }
 
 .center {
