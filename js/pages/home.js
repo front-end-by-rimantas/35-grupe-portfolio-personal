@@ -1,5 +1,9 @@
 // component imports
 
+import { renderPlans } from '../components/plansList/plansList.js';
+import { plansData } from '../data/plansData.js';
+
+
 // components execution
 
 /* HEADER */
@@ -24,6 +28,7 @@
 /* end of Testimonials */
 
 /* Plans */
+renderPlans('#plans_block', plansData);
 /* end of Plans */
 
 /* LatestPost */

@@ -39,19 +39,22 @@
 
     <!-- HEADER -->
     <header class="container">
-      <div class="row">
+      <div class="row nav">
         <div class="col-12">
           <img src="./img/headerLogo.webp" alt="Logo image" />
-          <nav class="hidden visible-md">
-            <a href="./">Home</a>
+          <nav class="hidden visible-md menu">
+            <a class="active" href="./">Home</a>
             <a href="./pages/about/">About</a>
             <a href="./pages/services/">Services</a>
             <a href="./pages/portfolio/">Portfolio</a>
-            <a href="./">Pricing</a>
+            <a href="./pages/pricing/">Pricing</a>
             <a href="#">Blog</a>
             <a href="#">Pages</a>
-            <a href="#">Contact</a>
+            <a href="./pages/contact/">Contact</a>
           </nav>
+          <a href="#" class="hidden-md icon">
+            <i class="fa-solid fa-bars"></i>
+          </a>
         </div>
       </div>
     </header>
@@ -277,6 +280,8 @@
           <h3>2D Vinyl Design</h3>
           <p>raster</p>
         </div>
+        <h3>2D Vinyl Design</h3>
+        <p>raster</p>
       </div>
     </section>
     <!-- end of LatestFeaturedProjects -->
@@ -307,7 +312,7 @@
           </p>
         </div>
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <div class="text section-description">
           <span class="circle">01</span>
           <h3 class="section-subtitle">Economy</h3>
@@ -347,7 +352,9 @@
           <p>Reliable Customer Service</p>
           <h2 class="section-title">499</h2>
           <a href="#" class="buy-plan">Buy now</a>
-        </div>
+        </div> -->
+      <div id="plans_block" class="row bg-third-color">
+
       </div>
     </section>
     <!-- end of Plans -->
@@ -464,6 +471,6 @@
     </footer>
     <!-- end of FOOTER -->
 
-    <script src="./js/pages/home.js"></script>
+    <script src="./js/pages/home.js" type="module" defer></script>
   </body>
 </html>
