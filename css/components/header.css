@@ -5,6 +5,7 @@ header.container {
   left: 0;
   background-color: var(--secondary-color);
   z-index: 2;
+  height: 70px;
 }
 .container .row.nav {
   margin-bottom: 12px;
