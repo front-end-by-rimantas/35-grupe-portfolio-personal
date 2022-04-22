@@ -1,12 +1,12 @@
 // component imports
-// import servicesList from '../components/servicesList/servicesList.js';
-// import servicesData from '../data/servicesData.js';
+import servicesList from '../components/servicesList/servicesList.js';
+import servicesData from '../data/servicesData.js';
 
-// import renderLatestpost from '../components/latestPost/latestPostList.js';
-// import latestPostData from '../data/latestPostData.js';
+import renderLatestpost from '../components/latestPost/latestPostList.js';
+import latestPostData from '../data/latestPostData.js';
 
-// import { renderPlans } from '../components/plansList/plansList.js';
-// import { plansData } from '../data/plansData.js';
+import { renderPlans } from '../components/plansList/plansList.js';
+import { plansData } from '../data/plansData.js';
 
 import { featuredProjectsList } from '../components/featuredProjectsList.js';
 import { featuredProjectsData } from '../data/featuredProjectsData.js';
@@ -22,6 +22,7 @@ import { featuredProjectsData } from '../data/featuredProjectsData.js';
 /* end of AboutMe */
 
 /* OfferedService */
+servicesList('#services_block', servicesData);
 /* end of OfferedService */
 
 /* NumbersCounter */
@@ -35,9 +36,13 @@ featuredProjectsList('#featuredProjects_block', featuredProjectsData);
 /* end of Testimonials */
 
 /* Plans */
+renderPlans('#plans_block', plansData);
 /* end of Plans */
 
 /* LatestPost */
+
+renderLatestpost('#latest_blog', latestPostData);
+
 /* end of LatestPost */
 
 /* Sponsors */
