@@ -8,9 +8,11 @@
 @import '../components/button.css';
 @import '../components/form.css';
 
-/* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
+/* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
+@import '../components/header.css';
 /* HEADER */
+
 /* enf of HEADER */
 
 /* Name of page */
