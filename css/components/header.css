@@ -35,3 +35,6 @@ a.active {
   padding: 8px;
   color: #222;
 }
+.shadow {
+  box-shadow: 0 4px 40px lightgray;
+}
