@@ -17,29 +17,11 @@
 /* end of HEADER */
 
 /* Hero (hero section) */
-.hero {
-  display: flex;
-  align-items: flex-end;
-  min-height: 80vh;
-}
-
-.container.no-padding-bottom {
-  padding-bottom: 0;
-}
-
-.row.no-margin-bottom {
-  margin-bottom: 0;
-}
-.margin-bottom-20 {
-  margin-bottom: 140px;
-}
-
-.center {
-  align-items: center;
-}
+@import '../components/hero.css';
 /* end of Hero (hero section) */
 
 /* AboutMe */
+@import '../components/aboutMe.css';
 /* end of AboutMe */
 
 /* OfferedService */

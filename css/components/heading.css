@@ -3,6 +3,22 @@
   margin-top: 30px;
   margin-bottom: 20px;
 }
+
+.section-title.hero {
+  font-size: 30px;
+  margin: 20px 0px;
+  text-align: left;
+}
+
+.section-title.about-me {
+  font-size: 20px;
+  margin: 30px 0 40px;
+  font-weight: 600;
+  line-height: 1.2em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
 p.section-description {
   font-size: 14px;
   font-weight: 300;
@@ -12,48 +28,78 @@ p.section-description {
   margin-bottom: 16px;
   line-height: 1.6em;
 }
+
+p.section-description.hero {
+  margin-bottom: 16px;
+}
+
+p.section-description.about-me {
+  margin-bottom: 30px;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.section-smaller {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
 .section-headline {
   font-weight: 400;
   font-size: 14px;
-  letter-spacing: 2px;
 }
 
 .section-headline.uppercase {
   text-transform: uppercase;
 }
 
-.center {
-  text-align: center;
-}
-.left {
-  text-align: left;
-}
-.section-title-uppercase {
-  font-size: 60px;
-  font-weight: 600;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  text-align: left;
-  text-transform: uppercase;
-}
-h2.uppercase-smaller {
-  font-size: 36px;
-  margin-top: 40px;
-  font-weight: 600;
-  line-height: 1.2em;
-  text-align: left;
-  text-transform: uppercase;
-}
-.section-smaller {
-  font-size: 18px;
-  font-family: 'Poppins', sans-serif;
+.section-headline.hero {
+  margin-top: 60px;
+  letter-spacing: 2px;
 }
 
-@media only screen and (max-width: 900px) {
-  .section-title.uppercase {
-    font-size: 30px;
+.section-headline.aboutMe {
+  margin-top: 30px;
+}
+
+/* sm */
+@media (min-width: 575px) {
+}
+/* md */
+@media (min-width: 767px) {
+  .section-headline {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-  .section-title.uppercase-smaller {
-    font-size: 20px;
+  .section-headline.aboutMe {
+    margin-top: 0px;
+  }
+}
+/* lg */
+@media (min-width: 991px) {
+  .section-title.hero {
+    line-height: 1.1em;
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .section-title.about-me {
+    font-size: 36px;
+  }
+}
+/*xl  */
+@media (min-width: 1199px) {
+  .section-title.hero {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
