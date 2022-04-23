@@ -26,6 +26,12 @@
 /* Tools expertness end  */
 
 /* My Qualifications  */
+.qualifications-row {
+    display: flex;
+    align-items: center;
+    background-color: burlywood;
+    margin-bottom: 10px;
+}
 /* My Qualifications end  */
 
 /* Testimonials  */
