@@ -36,5 +36,6 @@ a.active {
   color: #222;
 }
 .shadow {
+  transition: 0.4s ease-in;
   box-shadow: 0 4px 40px lightgray;
 }
