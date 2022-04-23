@@ -1,0 +1,29 @@
+.upper-heading {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 35px;
+}
+.blog:hover {
+  cursor: pointer;
+}
+.blog.blog:hover .upper-heading {
+  color: var(--primary-color);
+}
+.blog a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  color: #777;
+  padding: 10px;
+}
+.blog .link {
+  color: #222;
+  margin-right: 52px;
+}
+.links {
+  border-bottom: 1px solid #ddd;
+}
+i {
+  margin: 5px 1px 0 10px;
+}
