@@ -4,13 +4,13 @@ function renderLatestpost(selector, data) {
   let html = '';
   for (const item of data) {
     html += `<div class="col-12 col-md-4 blog">
+    <img class='img' src="../../../img/blog-img${item.img}.webp" alt="${item.altText}" class="sizing">
     <div class='links'>
-    <img src="../../../img/blog-img${item.img}.webp" alt="${item.altText}" class="sizing">
-    <a href="#"><img src="../../../img/blog-${item.thumb}-img.webp"></a><a class='link'>${item.link}</a>
-    <a href="#">${item.date}</a>
+    <a class= 'link' href="#"><img src='../../../img/blog-${item.thumb}-img.webp'>${item.link}</a>
+    <a class= 'comments' href="#">${item.date}</a>
     </div>
     <h4 class='upper-heading'>${item.title}</h4>
-    <p class='section-description'>${item.desc}</p>
+    <p class='section-description mr-btm'>${item.desc}</p>
     </div>`;
   }
 

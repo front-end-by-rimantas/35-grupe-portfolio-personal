@@ -1,3 +1,6 @@
+.img {
+  width: 100%;
+}
 .upper-heading {
   text-transform: uppercase;
   font-size: 18px;
@@ -9,21 +12,36 @@
 .blog.blog:hover .upper-heading {
   color: var(--primary-color);
 }
-.blog a {
+
+.links img {
+  margin-right: 10px;
+}
+.links .link {
+  color: #222;
+}
+.links a {
   display: inline-block;
   text-decoration: none;
   font-size: 14px;
   font-weight: 300;
   color: #777;
-  padding: 10px;
+  padding-top: 10px;
 }
-.blog .link {
-  color: #222;
-  margin-right: 52px;
+.links .comments {
+  padding-left: 15px;
 }
+
 .links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ddd;
 }
+
 i {
   margin: 5px 1px 0 10px;
+}
+.section-description.mr-btm {
+  margin-bottom: 70px;
 }
