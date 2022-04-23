@@ -5,7 +5,7 @@ const plansData = [
         desc: 'For the individuals',
         offer: ['Secure Online Transfer', 'Unlimited Styles for interface', 'Reliable Customer Service'],
         currency: '&pound;', /*'£'*/
-        price: 199,
+        price: '199.00',
     },
     {
         number: '02',
@@ -13,7 +13,7 @@ const plansData = [
         desc: 'For the individuals',
         offer: ['Secure Online Transfer','Unlimited Styles for interface','Reliable Customer Service'],
         currency: '&pound;',
-        price: 299,
+        price: '299.00',
     },
     {
         number: '03',
@@ -21,7 +21,7 @@ const plansData = [
         desc: 'For the individuals',
         offer: ['Secure Online Transfer','Unlimited Styles for interface','Reliable Customer Service'],
         currency: '&pound;',
-        price: 399,
+        price: '399.00',
     },
     {
         number: '04',
@@ -29,7 +29,7 @@ const plansData = [
         desc: 'For the individuals',
         offer: ['Secure Online Transfer','Unlimited Styles for interface','Reliable Customer Service'],
         currency: '&pound;',
-        price: 499,
+        price: '499.00',
     }
 ];
 

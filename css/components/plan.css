@@ -1,33 +1,23 @@
-.section-title {
-  font-size: 36px;
-  font-weight: 600;
-  text-align: center;
-  color: #222;
-  margin: 20px 0 10px;
+#plans_block {
+  display: flex;
+  flex-wrap: wrap;
 }
-.section-subtitle {
-  font-size: 18px;
-  font-weight: 600;
-  text-align: center;
-  color: #222;
-  margin-top: 20px;
-}
-.text {
-  font-size: 17px;
-  text-align: center;
-  color: #777;
-}
-.section-description {
+.plan {
+  width: 100%;
   background-color: var(--third-color);
   padding: 40px 20px;
-  margin: 20px 0;
+  margin-bottom: 30px;
+  min-height: 550px;
 }
-.section-description p:first-of-type {
-  padding-bottom: 30px;
+@media (min-width: 767px) {
+  .plan {
+    width: 50%;
+  }
 }
-.section-description > p {
-  padding: 12px;
-  border-bottom: 1px solid #eee;
+@media (min-width: 991px) {
+  .plan {
+    width: 25%;
+  }
 }
 .circle {
   display: inline-block;
@@ -41,4 +31,50 @@
   width: 140px;
   border-radius: 100%;
   border: 30px solid #e2e5ff;
+  transition: 0.2s;
+  margin-bottom: 20px;
+}
+.plan > p {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.plan p:first-of-type {
+  padding-bottom: 30px;
+}
+.plan:hover {
+  background: var(--gradient);
+  transform: scale(1.04);
+  color: var(--secondary-color);
+  transition: 0.2s ease-in;
+}
+.plan:hover > p {
+  color: var(--secondary-color);
+}
+.plan:hover .circle {
+  color: var(--secondary-color);
+  border-color: rgba(255, 255, 255, 0.21);
+}
+.section-cost{
+  margin-top: 30px;
+  font-size: 36px;
+}
+.plan:hover .section-cost {
+  display: none;
+}
+.buy-plan {
+  display: none;
+  width: 100%;
+  padding: 10px 50px;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: var(--secondary-color);
+  color: var(--fourth-color);
+  margin-top: 30px;
+}
+.plan:hover .buy-plan {
+  display: inline-block;
 }
