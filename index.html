@@ -27,8 +27,19 @@
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="./favicon/" />
     <link rel="stylesheet" href="./css/pages/home.css" />
+    <link rel="stylesheet" href="./fonts/css/all.css" />
     <!-- analytics -->
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -36,19 +47,22 @@
 
     <!-- HEADER -->
     <header class="container">
-      <div class="row">
+      <div class="row nav">
         <div class="col-12">
           <img src="./img/headerLogo.webp" alt="Logo image" />
-          <nav class="hidden visible-md">
-            <a href="./">Home</a>
+          <nav class="hidden visible-md menu">
+            <a class="active" href="./">Home</a>
             <a href="./pages/about/">About</a>
             <a href="./pages/services/">Services</a>
             <a href="./pages/portfolio/">Portfolio</a>
-            <a href="./">Pricing</a>
+            <a href="./pages/pricing/">Pricing</a>
             <a href="#">Blog</a>
             <a href="#">Pages</a>
-            <a href="#">Contact</a>
+            <a href="./pages/contact/">Contact</a>
           </nav>
+          <a href="#" class="hidden-md icon">
+            <i class="fa-solid fa-bars"></i>
+          </a>
         </div>
       </div>
     </header>
@@ -58,9 +72,9 @@
     <section class="container bg-third-color">
       <div class="row">
         <div class="col-12 col-md-6">
-          <h6>This is me</h6>
-          <h1>Philip Gilbert</h1>
-          <p>
+          <h6 class="section-headline left">This is me</h6>
+          <h1 class="section-title uppercase">PHILIP GILBERT</h1>
+          <p class="section-description left">
             You will begin to realise why this exercise is called the Dickens
             Pattern with reference to the ghost showing Scrooge some different
             futures.
@@ -81,9 +95,9 @@
           <img src="./img/about-img.webp" alt="Me" class="sizing" />
         </div>
         <div class="col-12 col-md-6 col-lg-5 ml-lg-1">
-          <h3>ABOUT ME</h3>
-          <h2>PERSONAL</h2>
-          <p>
+          <h3 class="section-headline left">ABOUT ME</h3>
+          <h2 class="section-title uppercase-smaller">PERSONAL DETAILS</h2>
+          <p class="section-description left">
             Here, I focus on a range of items and features that we use in life
             without giving them a second thought. such as Coca Cola. Dolor sit
             amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
@@ -97,103 +111,55 @@
     <!-- end of AboutMe -->
 
     <!-- OfferedService -->
-    <section class="container">
+    <section class="container center">
       <div class="row">
         <div class="col-12 col-lg-8 ml-lg-2">
-          <h1>My Offered Services</h1>
-          <p>
+          <h1 class="section-title">My Offered Services</h1>
+          <p class="section-description service">
             At about this time of year, some months after New Year’s resolutions
             have been made and kept, or made and neglected.
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-4">
-          <span class="lnr lnr-pie-chart"></span>
-          <h2>Web Design</h2>
-          <p>
-            “It is not because things are difficult that we do not dare; it is
-            because we do not dare that they are difficult.”
-          </p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <span class="lnr lnr-laptop-phone"></span>
-          <h2>Web Development</h2>
-          <p>
-            If you are an entrepreneur, you know that your success cannot depend
-            on the opinions of others. Like the wind, opinions.
-          </p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <span class="lnr lnr-camera"></span>
-          <h2>Photography</h2>
-          <p>
-            Do you want to be even more successful? Learn to love learning and
-            growth. The more effort you put into improving your skills.
-          </p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <span class="lnr lnr-picture"></span>
-          <h2>Clipping Path</h2>
-          <p>
-            Hypnosis quit smoking methods maintain caused quite a stir in the
-            medical world over the last two decades. There is a lot of argument.
-          </p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <span class="lnr lnr-smartphone"></span>
-          <h2>Apps Interface</h2>
-          <p>
-            Do you sometimes have the feeling that you’re running into the same
-            obstacles over and over again? Many of my conflicts.
-          </p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <span class="lnr lnr-rocket"></span>
-          <h2>Graphic Design</h2>
-          <p>
-            You’ve heard the expression, “Just believe it and it will come.”
-            Well, technically, that is true, however, ‘believing’ is not just
-            thinking that.
-          </p>
-        </div>
-      </div>
+      <div id="services_block" class="row"></div>
     </section>
     <!-- end of OfferedService -->
 
     <!-- NumbersCounter -->
-    <section class="container bg-gradient">
+    <section class="container bg-gradient center">
       <div class="row">
         <div class="col-12 col-md-6 col-lg-3">
-          <h2>2536</h2>
-          <p>Projects Completed</p>
+          <h2 class="section-headline center">2536</h2>
+          <p class="section-description center">Projects Completed</p>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
-          <h2>6784</h2>
-          <p>Happy Clients</p>
+          <h2 class="section-headline center">6784</h2>
+          <p class="section-description center">Happy Clients</p>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
-          <h2>2239</h2>
-          <p>Cups of Coffee</p>
+          <h2 class="section-headline center">2239</h2>
+          <p class="section-description center">Cups of Coffee</p>
         </div>
         <div class="col-12 col-md-6 col-lg-3">
-          <h2>434</h2>
-          <p>Real Professionals</p>
+          <h2 class="section-headline center">434</h2>
+          <p class="section-description center">Real Professionals</p>
         </div>
       </div>
     </section>
     <!-- end of NumbersCounter -->
 
     <!-- LatestFeaturedProjects -->
-    <section class="container">
+    <section class="container center">
       <div class="row">
         <div class="col-12 col-md-8 ml-md-2 col-xl-6 ml-xl-3">
-          <h2>Our Latest Featured Projects</h2>
-          <p>Who are in extremely love with eco friendly system.</p>
+          <h2 class="section-title center">Our Latest Featured Projects</h2>
+          <p class="section-description center">
+            Who are in extremely love with eco friendly system.
+          </p>
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-md-6 ml-md-3 col-xl-4 ml-xl-4 ">
+        <div class="col-12 col-md-6 ml-md-3 col-xl-4 ml-xl-4">
           <a class="sub-header" href="#">ALL</a>
           <a class="sub-header" href="#">VECTOR</a>
           <a class="sub-header" href="#">RASTER</a>
@@ -204,51 +170,75 @@
       <div class="row">
         <div class="col-12 col-sm-4 latest-projects-block">
           <div class="project-img">
-           <img src="./img/project-img1.webp" alt="Project" class="sizing" /> 
-           <img src="./img/preview-icon.webp" alt="Preview-icon" class="preview-hover">
+            <img src="./img/project-img1.webp" alt="Project" class="sizing" />
+            <img
+              src="./img/preview-icon.webp"
+              alt="Preview-icon"
+              class="preview-hover"
+            />
           </div>
-          <h3>2D Vinyl Design</h3>
-          <p>vector</p>
+          <h3 class="section-smaller">2D Vinyl Design</h3>
+          <p class="section-description center">vector</p>
         </div>
         <div class="col-12 col-sm-4 latest-projects-block">
           <div class="project-img">
-          <img src="./img/project-img2.webp" alt="Project" class="sizing"/>
-          <img src="./img/preview-icon.webp" alt="Preview-icon" class="preview-hover">
-        </div>
-          <h3>2D Vinyl Design</h3>
-          <p>vector</p>
+            <img src="./img/project-img2.webp" alt="Project" class="sizing" />
+            <img
+              src="./img/preview-icon.webp"
+              alt="Preview-icon"
+              class="preview-hover"
+            />
+          </div>
+          <h3 class="section-smaller">2D Vinyl Design</h3>
+          <p class="section-description center">vector</p>
         </div>
         <div class="col-12 col-sm-4 latest-projects-block">
           <div class="project-img">
-          <img src="./img/project-img3.webp" alt="Project" class="sizing"/>
-          <img src="./img/preview-icon.webp" alt="Preview-icon" class="preview-hover">
+            <img src="./img/project-img3.webp" alt="Project" class="sizing" />
+            <img
+              src="./img/preview-icon.webp"
+              alt="Preview-icon"
+              class="preview-hover"
+            />
           </div>
-          <h3>Creative Poster Design</h3>
-          <p>Agency</p>
+          <h3 class="section-smaller">Creative Poster Design</h3>
+          <p class="section-description center">Agency</p>
         </div>
         <div class="col-12 col-sm-4 latest-projects-block">
           <div class="project-img">
-          <img src="./img/project-img4.webp" alt="Project" class="sizing"/>
-          <img src="./img/preview-icon.webp" alt="Preview-icon" class="preview-hover">
-        </div>  
-          <h3>Embosed Logo Design</h3>
-          <p>Portal</p>
-        </div>
-        <div class="col-12 col-sm-4 latest-projects-block">
-          <div class="project-img"> 
-          <img src="./img/project-img5.webp" alt="Project" class="sizing"/>
-          <img src="./img/preview-icon.webp" alt="Preview-icon" class="preview-hover">
+            <img src="./img/project-img4.webp" alt="Project" class="sizing" />
+            <img
+              src="./img/preview-icon.webp"
+              alt="Preview-icon"
+              class="preview-hover"
+            />
           </div>
-          <h3>3D Helmet Design</h3>
-          <p>vector</p>
+          <h3 class="section-smaller">Embosed Logo Design</h3>
+          <p class="section-description center">Portal</p>
         </div>
         <div class="col-12 col-sm-4 latest-projects-block">
           <div class="project-img">
-          <img src="./img/project-img6.webp" alt="Project" class="sizing"/>
-          <img src="./img/preview-icon.webp" alt="Preview-icon" class="preview-hover">
+            <img src="./img/project-img5.webp" alt="Project" class="sizing" />
+            <img
+              src="./img/preview-icon.webp"
+              alt="Preview-icon"
+              class="preview-hover"
+            />
           </div>
-          <h3>2D Vinyl Design</h3>
-          <p>raster</p>
+          <h3 class="section-smaller">3D Helmet Design</h3>
+          <p class="section-description center">vector</p>
+        </div>
+        <div class="col-12 col-sm-4 latest-projects-block">
+          <div class="project-img">
+            <img src="./img/project-img6.webp" alt="Project" class="sizing" />
+            <img
+              src="./img/preview-icon.webp"
+              alt="Preview-icon"
+              class="preview-hover"
+            />
+          </div>
+          <h3 class="section-smaller">2D Vinyl Design</h3>
+          <p class="section-description center">raster</p>
         </div>
       </div>
     </section>
@@ -257,9 +247,9 @@
     <!-- Testimonials -->
     <section class="container bg-third-color">
       <div class="row">
-        <div class="col-12 col-md-10 col-lg-8 ml-md-1 ml-lg-2">
-          <h2>Client's Feedback About Me</h2>
-          <p>
+        <div class="col-12 col-md-10 col-lg-8 ml-md-1 ml-lg-2 center">
+          <h2 class="section-title center">Client's Feedback About Me</h2>
+          <p class="section-description center">
             It is very easy to start smoking but it is an uphill task to quit
             it. Ask any chain smoker or even a person.
           </p>
@@ -270,96 +260,35 @@
     <!-- end of Testimonials -->
 
     <!-- Plans -->
-    <section class="container">
+    <section class="container center">
       <div class="row">
         <div class="col-12 col-md-10 ml-md-1 col-lg-8 ml-lg-2">
-          <h2 class="section-title">Choose Your Plan</h2>
-          <p class="text">
+          <h2 class="section-title center">Choose Your Plan</h2>
+          <p class="section-description center">
             When someone does something that they know that they shouldn’t do,
             did they.
           </p>
         </div>
       </div>
-      <div class="row bg-third-color">
-        <div class="col-12 col-md-6 col-lg-3 text section-description">
-          <span class="circle">01</span>
-          <h3 class="section-subtitle">Economy</h3>
-          <p>For the individuals</p>
-          <p>Secure Online Transfer</p>
-          <p>Unlimited Styles for interface</p>
-          <p>Reliable Customer Service</p>
-          <h2 class="section-title">199</h2>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 text section-description">
-          <span class="circle">02</span>
-          <h3 class="section-subtitle">Business</h3>
-          <p>For the individuals</p>
-          <p>Secure Online Transfer</p>
-          <p>Unlimited Styles for interface</p>
-          <p>Reliable Customer Service</p>
-          <h2 class="section-title">299</h2>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 text section-description">
-          <span class="circle">03</span>
-          <h3 class="section-subtitle">Premium</h3>
-          <p>For the individuals</p>
-          <p>Secure Online Transfer</p>
-          <p>Unlimited Styles for interface</p>
-          <p>Reliable Customer Service</p>
-          <h2 class="section-title">399</h2>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 text section-description">
-          <span class="circle">04</span>
-          <h3 class="section-subtitle">Exclusive</h3>
-          <p>For the individuals</p>
-          <p>Secure Online Transfer</p>
-          <p>Unlimited Styles for interface</p>
-          <p>Reliable Customer Service</p>
-          <h2 class="section-title">499</h2>
-        </div>
-      </div>
+      <div id="plans_block" class="row bg-third-color"></div>
     </section>
     <!-- end of Plans -->
 
     <!-- LatestPost -->
     <section class="container bg-third-color">
       <div class="row">
-        <div class="col-12 col-md-10 ml-md-1 col-lg-8 ml-lg-2">
-          <h2>Latest Posts From Our Blog</h2>
-          <p>
+        <div class="col-12 col-md-10 ml-md-1 col-lg-8 ml-lg-2 center">
+          <h2 class="section-title">Latest Posts From Our Blog</h2>
+          <p class="section-description">
             You may be a skillful, effective employer but if you don’t trust
             your personnel and the opposite, then the chances of improving and
             expanding the business
           </p>
         </div>
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <div>
-            <img src="./img/blog-img1.webp" alt="Night town" class="sizing">
-            <a href="#"><img src="./img/blog-author-img.webp" alt="author">Mark Wiens</a>
-            <a href="#">13th Dec  15  04</a>
-          </div>
-          <h4>BREAK THROUGH SELF DOUBT AND FEAR</h4>
-          <p>Dream interpretation has many forms; it can be done be done for the sake of fun, hobby or can be taken up as a serious career.</p>
-        </div>
-        <div class="col-12 col-md-4">
-          <div>
-            <img src="./img/blog-img2.webp" alt="Dark forest" class="sizing">
-            <a href="#"><img src="./img/blog-author-img.webp" alt="author">Mark Wiens</a>
-            <a href="#">13th Dec  15  04</a>
-          </div>
-          <h4>PORTABLE FASHION FOR YOUNG WOMEN</h4>
-          <p>You may be a skillful, effective employer but if you don’t trust your personnel and the opposite, then the chances of improving.</p>
-        </div>
-        <div class="col-12 col-md-4">
-          <div>
-            <img src="./img/blog-img3.webp" alt="Mountain light" class="sizing">
-            <a href="#"><img src="./img/blog-author-img.webp" alt="author">Mark Wiens</a>
-            <a href="#">13th Dec  15  04</a>
-          </div>
-          <h4>DO DREAMS SERVE AS A PREMONITION</h4>
-          <p>So many of us are demotivated to achieve anything. Such people are not enthusiastic about anything. They don’t want to work involved.</p>
-        </div>
+      </div>
+      <div id="latest_blog" class="row">
+      
+      </div>
     </section>
     <!-- end of LatestPost -->
 
@@ -375,27 +304,27 @@
     <footer class="container bg-fourth-color">
       <div class="row">
         <div class="col-12 col-sm-6 col-lg-5">
-          <h4>About Me</h4>
-          <p>
+          <h4 class="section-smaller">About Me</h4>
+          <p class="section-description">
             We have tested a number of registry fix and clean utilities and
             present our top 3 list on our site for your convenience
           </p>
-          <p>
+          <p class="section-description">
             Copyright ©2022 All rights reserved | This template is made with
             &hearts; by <a href="#">Colorlib</a>
           </p>
         </div>
         <div class="col-12 col-sm-6 col-lg-5">
-          <h4>Newsletter</h4>
-          <p>Stay updated with our latest trends</p>
+          <h4 class="section-smaller">Newsletter</h4>
+          <p class="section-description">Stay updated with our latest trends</p>
           <form class="col-12 col-md-6 ml-lg-1">
             <input type="email" placeholder="Enter Email Address" />
             <button>>></button>
           </form>
         </div>
         <div class="col-12 col-sm-12 col-lg-2">
-          <h4>Follow Me</h4>
-          <p>Let us be social</p>
+          <h4 class="section-smaller">Follow Me</h4>
+          <p class="section-description">Let us be social</p>
           <a href="#">icon</a>
           <a href="#">icon</a>
           <a href="#">icon</a>
@@ -404,7 +333,7 @@
       </div>
     </footer>
     <!-- end of FOOTER -->
-
-    <script src="./js/pages/home.js"></script>
+    <script src="./js/pages/home.js" type="module" defer></script>
+    
   </body>
 </html>
