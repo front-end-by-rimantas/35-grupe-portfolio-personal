@@ -1,27 +1,22 @@
-.row.visible-flex.about-block-position {
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 .container.about-me {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding-top: 150px;
-  padding-bottom: 0;
+  padding-top: 110px;
+}
+
+.row.visible-flex.about-block-position {
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* sm */
 @media (min-width: 575px) {
-  .container.about-me {
-    padding-top: 110px;
-  }
 }
 /* md */
 @media (min-width: 767px) {
-  .container.about-me {
-    height: 500px;
-    padding-top: 80px;
+  .row.visible-flex.about-block-position {
+    flex-direction: row;
   }
 }
 /* lg */

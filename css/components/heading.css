@@ -70,6 +70,9 @@ p.section-description.about-me {
 
 /* sm */
 @media (min-width: 575px) {
+  .section-headline.hero {
+    margin-top: 0px;
+  }
 }
 /* md */
 @media (min-width: 767px) {
@@ -87,7 +90,7 @@ p.section-description.about-me {
     line-height: 1.1em;
     font-size: 60px;
     font-weight: 600;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     margin-bottom: 10px;
     text-align: left;
     text-transform: uppercase;
