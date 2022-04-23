@@ -8,19 +8,22 @@ import latestPostData from '../data/latestPostData.js';
 import { renderPlans } from '../components/plansList/plansList.js';
 import { plansData } from '../data/plansData.js';
 
+import { featuredProjectsList } from '../components/featuredProjectsList.js/featuredProjectsList.js';
+import { featuredProjectsData } from '../data/featuredProjectsData.js';
+
 // components execution
 
 /* HEADER */
 const mainHeaderDOM = document.querySelector('.main-header');
 
 addEventListener('scroll', function () {
-    const headerPosition = 150;
-    if (scrollY > headerPosition) {
-        mainHeaderDOM.classList.add('shadow');
-    } else {
-        mainHeaderDOM.classList.remove('shadow');
-    }
-})
+  const headerPosition = 150;
+  if (scrollY > headerPosition) {
+    mainHeaderDOM.classList.add('shadow');
+  } else {
+    mainHeaderDOM.classList.remove('shadow');
+  }
+});
 /* enf of HEADER */
 
 /* Hero (hero section) */
@@ -37,6 +40,7 @@ servicesList('#services_block', servicesData);
 /* end of NumbersCounter */
 
 /* LatestFeaturedProjects */
+featuredProjectsList('#featuredProjects_block', featuredProjectsData);
 /* end of LatestFeaturedProjects */
 
 /* Testimonials */
