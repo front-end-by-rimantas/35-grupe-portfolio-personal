@@ -12,8 +12,8 @@ function featuredProjectsList(selector, data) {
         class="preview-hover"
       />
       </div>
-      <h3>${item.title}</h3>
-      <p>${item.description}</p>
+      <h3 class="section-smaller">${item.title}</h3>
+      <p class="section-description center">${item.description}</p>
       </div>`;
   }
   DOM.innerHTML = HTML;
