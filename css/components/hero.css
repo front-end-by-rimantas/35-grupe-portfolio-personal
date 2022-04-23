@@ -19,17 +19,8 @@
   margin-bottom: 0;
 }
 
-.align-self {
-  align-self: center !important;
-}
-
 /* sm */
 @media (min-width: 575px) {
-  .visible-flex.hero-block-position {
-    align-content: space-around;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
   .margin-bottom-hero {
     margin-bottom: 0px;
   }
@@ -39,7 +30,7 @@
   .margin-bottom-hero {
     margin-bottom: 40px;
   }
-  .visible-flex.hero-block-position {
+  .row.visible-flex.hero-block-position {
     flex-wrap: nowrap;
     align-items: center;
   }
@@ -58,8 +49,5 @@
 @media (min-width: 1199px) {
   .margin-bottom-hero {
     margin-bottom: 50px;
-  }
-  .visible-flex.hero-block-position {
-    justify-content: space-between;
   }
 }
