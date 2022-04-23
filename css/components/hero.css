@@ -1,22 +1,16 @@
-.container.no-padding-bottom {
-  padding-bottom: 0;
-}
-
 .row.visible-flex.hero-block-position {
-  align-content: space-around !important;
+  align-content: space-around;
   justify-content: center;
   flex-wrap: wrap;
   height: 720px;
+  margin-bottom: 0;
 }
 
 .container.hero {
   display: flex;
   align-items: center;
   height: 750px;
-}
-
-.row.small-margin-bottom {
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /* sm */
