@@ -4,7 +4,7 @@
   padding-top: 110px;
 }
 
-.row.visible-flex.about-block-position {
+.row.visible-flex.about-container-row {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
@@ -15,7 +15,7 @@
 }
 /* md */
 @media (min-width: 767px) {
-  .row.visible-flex.about-block-position {
+  .row.visible-flex.about-container-row {
     flex-direction: row;
   }
 }
