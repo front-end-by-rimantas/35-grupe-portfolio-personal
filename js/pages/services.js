@@ -1,5 +1,12 @@
 // component imports
+import servicesList from '../components/servicesList/servicesList.js';
+import servicesData from '../data/servicesData.js';
 
+import renderLatestpost from '../components/latestPost/latestPostList.js';
+import latestPostData from '../data/latestPostData.js';
+
+import { renderPlans } from '../components/plansList/plansList.js';
+import { plansData } from '../data/plansData.js';
 // components execution
 
 /* HEADER */
@@ -9,6 +16,7 @@
 /* Page name end */
 
 /* OfferedService */
+servicesList('#services_block', servicesData);
 /* end of OfferedService */
 
 /* NumbersCounter */

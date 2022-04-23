@@ -12,6 +12,7 @@ const servicesList = (selector, data) => {
   }
 
   DOM.innerHTML = htmlString;
+  return DOM.innerHTML;
 };
 
 export default servicesList;
