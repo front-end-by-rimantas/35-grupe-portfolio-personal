@@ -15,10 +15,10 @@
 .blog:hover {
   cursor: pointer;
 }
-.blog.blog:hover .upper-heading {
+.blog:hover .upper-heading {
   color: var(--primary-color);
 }
-.blog.blog:hover .img {
+.blog:hover .img {
   transform: scale(1.06);
 }
 
