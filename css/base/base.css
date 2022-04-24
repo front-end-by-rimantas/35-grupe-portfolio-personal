@@ -41,3 +41,35 @@ body {
   width: 100%;
   height: auto;
 }
+
+.container > .row.no-margin-bottom {
+  margin-bottom: 0px;
+}
+.container > .row.no-margin {
+  margin: 0px;
+}
+
+/* sm */
+@media (min-width: 575px) {
+  .row.no-margin-bottom-sm {
+    margin-bottom: 0;
+  }
+}
+/* md */
+@media (min-width: 767px) {
+  .row.no-margin-bottom-md {
+    margin-bottom: 0;
+  }
+}
+/* lg */
+@media (min-width: 991px) {
+  .row.no-margin-bottom-lg {
+    margin-bottom: 0;
+  }
+}
+/*xl  */
+@media (min-width: 1199px) {
+  .row.no-margin-bottom-xl {
+    margin-bottom: 0;
+  }
+}
