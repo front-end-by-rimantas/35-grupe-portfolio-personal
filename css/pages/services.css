@@ -7,16 +7,19 @@
 /* components */
 @import '../components/button.css';
 @import '../components/form.css';
+@import '../components/heading.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* HEADER */
+@import '../components/header.css';
 /* enf of HEADER */
 
 /* Page name */
 /* Page name end */
 
 /* OfferedService */
+@import '../components/services.css';
 /* end of OfferedService */
 
 /* NumbersCounter */

@@ -1,16 +1,10 @@
-class Hero extends HTMLElement {
-  constructor() {
-    super();
+const heroSection = (selector) => {
+  const DOM = document.querySelector(selector)
+  let imgPath = '';
+  if (document.URL.includes('pages')) {
+    imgPath = '../.';
   }
-
-  connectedCallback() {
-    let imgPath = '';
-    if (document.URL.includes('pages')) {
-      imgPath = '../.';
-    }
-
-    this.innerHTML = `
-    <section class="container bg-third-color">
+  DOM.innerHTML = `
       <div class="row">
         <div class="col-12 col-md-6">
           <h6 class="section-headline left">This is me</h6>
@@ -25,9 +19,7 @@ class Hero extends HTMLElement {
         <div class="col-10 ml-1 col-md-6 ml-md-0 col-xl-5">
           <img src="${imgPath}./img/hero-img.webp" alt="hero-img" class="sizing" />
         </div>
-      </div>
-    </section>`
-  }
+      </div>`
 }
 
-customElements.define('hero-component', Hero);
+export { heroSection }

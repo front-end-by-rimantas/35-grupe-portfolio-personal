@@ -1,32 +1,38 @@
 // component imports
-import servicesList from '../components/servicesList/servicesList.js';
-import servicesData from '../data/servicesData.js';
-
 import renderLatestpost from '../components/latestPost/latestPostList.js';
 import latestPostData from '../data/latestPostData.js';
 
-import { renderPlans } from '../components/plansList/plansList.js';
-import { plansData } from '../data/plansData.js';
+import { headerSection } from '../components/sections/headerSection.js';
+import { footerSection } from '../components/sections/footerSection.js';
+import { numbersCounterContainer } from '../components/sections/numberCounterSection.js';
+import { plansSection } from '../components/sections/plansSection.js';
+import { testimonialsSection } from '../components/sections/testimonialsSection.js';
+import { servicesSection } from '../components/sections/serviceSection.js'
 // components execution
 
 /* HEADER */
+headerSection('#header');
 /* enf of HEADER */
 
 /* Page name */
 /* Page name end */
 
 /* OfferedService */
-servicesList('#services_block', servicesData);
+servicesSection('#services');
 /* end of OfferedService */
 
 /* NumbersCounter */
+numbersCounterContainer('#numberCounter');
 /* end of NumbersCounter */
 
 /* Plans */
+plansSection('#plans');
 /* end of Plans */
 
 /* Testimonials */
+testimonialsSection('#testimonials');
 /* end of Testimonials */
 
 /* FOOTER */
+footerSection('#footer');
 /* end of FOOTER */

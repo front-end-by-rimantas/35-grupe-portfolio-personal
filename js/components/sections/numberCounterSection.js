@@ -1,16 +1,6 @@
-class Counter extends HTMLElement {
-  constructor() {
-    super();
-  }
-
-  connectedCallback() {
-    let imgPath = '';
-    if (document.URL.includes('pages')) {
-      imgPath = '../.';
-    }
-
-    this.innerHTML = `
-    <section class="container bg-gradient center">
+const numbersCounterContainer = (selector) => {
+  const DOM = document.querySelector(selector);
+  DOM.innerHTML = `
       <div class="row">
         <div class="col-12 col-md-6 col-lg-3">
           <h2 class="section-headline center">2536</h2>
@@ -28,9 +18,8 @@ class Counter extends HTMLElement {
           <h2 class="section-headline center">434</h2>
           <p class="section-description center">Real Professionals</p>
         </div>
-      </div>
-    </section>`
-  }
+      </div>`
+
 }
 
-customElements.define('counter-component', Counter);
+export { numbersCounterContainer }

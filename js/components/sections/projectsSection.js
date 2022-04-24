@@ -1,17 +1,11 @@
-class Features extends HTMLElement {
-  constructor() {
-    super();
+const projectsSection = (selector) => {
+  const DOM = document.querySelector(selector)
+  let imgPath = '';
+  if (document.URL.includes('pages')) {
+    imgPath = '../.';
   }
-
-  connectedCallback() {
-    let imgPath = '';
-    if (document.URL.includes('pages')) {
-      imgPath = '../.';
-    }
-
-    this.innerHTML = `
-    <section class="container center">
-      <div class="row">
+  DOM.innerHTML = `
+  <div class="row">
         <div class="col-12 col-md-8 ml-md-2 col-xl-6 ml-xl-3">
           <h2 class="section-title center">Our Latest Featured Projects</h2>
           <p class="section-description center">
@@ -101,9 +95,7 @@ class Features extends HTMLElement {
           <h3 class="section-smaller">2D Vinyl Design</h3>
           <p class="section-description center">raster</p>
         </div>
-      </div>
-    </section>`
-  }
+      </div>`
 }
 
-customElements.define('features-component', Features);
+export { projectsSection }

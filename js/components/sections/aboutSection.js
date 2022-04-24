@@ -1,15 +1,11 @@
-class About extends HTMLElement {
-  constructor() {
-    super();
-  }
+const aboutSection = (selector) => {
+  const DOM = document.querySelector(selector);
 
-  connectedCallback() {
-    let imgPath = '';
-    if (document.URL.includes('pages')) {
-      imgPath = '../.';
-    }
-    this.innerHTML = `
-    <section class="container">
+  let imgPath = '';
+  if (document.URL.includes('pages')) {
+    imgPath = '../.';
+  }
+  DOM.innerHTML = `
       <div class="row">
         <div class="col-12 col-md-6">
           <img src="${imgPath}./img/about-img.webp" alt="Me" class="sizing" />
@@ -26,9 +22,7 @@ class About extends HTMLElement {
           </p>
           <a href="#" class="btn">View full details</a>
         </div>
-      </div>
-    </section>`
-  }
+      </div>`
 }
 
-customElements.define('about-component', About);
+export { aboutSection }

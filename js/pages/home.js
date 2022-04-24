@@ -8,9 +8,11 @@ import latestPostData from '../data/latestPostData.js';
 import { renderPlans } from '../components/plansList/plansList.js';
 import { plansData } from '../data/plansData.js';
 
+import { heroSection } from '../components/sections/heroSection.js'
 // components execution
 
 /* HEADER */
+heroSection('#hero');
 /* enf of HEADER */
 
 /* Hero (hero section) */

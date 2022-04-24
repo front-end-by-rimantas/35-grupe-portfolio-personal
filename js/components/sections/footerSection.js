@@ -1,16 +1,7 @@
-class Footer extends HTMLElement {
-  constructor() {
-    super();
-  }
-
-  connectedCallback() {
-    let imgPath = '';
-    if (document.URL.includes('pages')) {
-      imgPath = '../.';
-    }
-    this.innerHTML = `
-    <footer class="container bg-fourth-color">
-      <div class="row">
+const footerSection = (selector) => {
+  const DOM = document.querySelector(selector)
+  DOM.innerHTML = `
+  <div class="row">
         <div class="col-12 col-sm-6 col-lg-5">
           <h4 class="section-smaller">About Me</h4>
           <p class="section-description">
@@ -38,9 +29,7 @@ class Footer extends HTMLElement {
           <a href="#">icon</a>
           <a href="#">icon</a>
         </div>
-      </div>
-    </footer>`
-  }
+      </div>`
 }
 
-customElements.define('footer-component', Footer);
+export { footerSection }

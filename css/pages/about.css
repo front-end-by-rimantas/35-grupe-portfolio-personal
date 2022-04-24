@@ -1,16 +1,16 @@
 /* base */
-/* @import '../base/base.css';
-@import '../base/layout.css'; */
+@import '../base/base.css';
+@import '../base/layout.css';
 
 /* 3rd-party */
 
 /* components */
-/* @import '../components/button.css';
-@import '../components/form.css'; */
-@import './home.css';
+@import '../components/button.css';
+@import '../components/heading.css';
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* HEADER */
+@import '../components/header.css';
 /* enf of HEADER */
 
 /* Name of page */
