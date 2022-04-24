@@ -1,0 +1,27 @@
+.container.about-me {
+  display: flex;
+  justify-content: center;
+  padding-top: 110px;
+}
+
+.row.visible-flex.about-container-row {
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* sm */
+@media (min-width: 575px) {
+}
+/* md */
+@media (min-width: 767px) {
+  .row.visible-flex.about-container-row {
+    flex-direction: row;
+  }
+}
+/* lg */
+@media (min-width: 991px) {
+}
+/*xl  */
+@media (min-width: 1199px) {
+}
