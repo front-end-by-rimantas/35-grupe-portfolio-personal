@@ -1,4 +1,4 @@
-header.container {
+.main-header {
   padding: 0;
   position: fixed;
   top: 0;
@@ -34,4 +34,8 @@ a.active {
   font-size: 24px;
   padding: 8px;
   color: #222;
+}
+.shadow {
+  transition: 0.4s ease-in;
+  box-shadow: 0 4px 40px lightgray;
 }
