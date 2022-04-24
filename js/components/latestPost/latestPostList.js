@@ -13,8 +13,10 @@ function renderLatestpost(selector, data) {
     <p>${item.desc}</p>
     </div>`;
   }
-
-  DOM.innerHTML = html;
+  if (DOM) {
+    DOM.innerHTML = html;
+  }
+  return html;
 }
 
 export default renderLatestpost;

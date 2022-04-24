@@ -13,7 +13,7 @@ headerSection('#header');
 /* end of Name of page end */
 
 /* LatestFeaturedProjects */
-projectsSection('#projects')
+projectsSection('#projects');
 /* end of LatestFeaturedProjects */
 
 /* FOOTER  */
