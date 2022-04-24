@@ -1,0 +1,36 @@
+footer.container {
+  padding: 100px 0 120px;
+}
+.mr-btm {
+  margin-bottom: 25px;
+}
+.weblink {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.social i {
+  color: var(--secondary-color);
+  font-size: 14px;
+}
+.email {
+  padding: 13px 10px 13px 20px;
+  width: 85%;
+  border: none;
+  outline: none;
+  margin-bottom: 25px;
+}
+.email::placeholder {
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  color: #999;
+}
+form {
+  display: flex;
+}
+.submit {
+  cursor: pointer;
+  padding: 0 15px 0 6px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+}
