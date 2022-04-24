@@ -1,12 +1,26 @@
 // component imports
+import servicesList from '../components/servicesList/servicesList.js';
+import servicesData from '../data/servicesData.js';
+
+import renderLatestpost from '../components/latestPost/latestPostList.js';
+import latestPostData from '../data/latestPostData.js';
 
 import { renderPlans } from '../components/plansList/plansList.js';
 import { plansData } from '../data/plansData.js';
 
-
 // components execution
 
 /* HEADER */
+const mainHeaderDOM = document.querySelector('.main-header');
+
+addEventListener('scroll', function () {
+    const headerPosition = 150;
+    if (scrollY > headerPosition) {
+        mainHeaderDOM.classList.add('shadow');
+    } else {
+        mainHeaderDOM.classList.remove('shadow');
+    }
+})
 /* enf of HEADER */
 
 /* Hero (hero section) */
@@ -16,6 +30,7 @@ import { plansData } from '../data/plansData.js';
 /* end of AboutMe */
 
 /* OfferedService */
+servicesList('#services_block', servicesData);
 /* end of OfferedService */
 
 /* NumbersCounter */
@@ -32,6 +47,9 @@ renderPlans('#plans_block', plansData);
 /* end of Plans */
 
 /* LatestPost */
+
+renderLatestpost('#latest_blog', latestPostData);
+
 /* end of LatestPost */
 
 /* Sponsors */
