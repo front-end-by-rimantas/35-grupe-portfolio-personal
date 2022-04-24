@@ -26,11 +26,21 @@
     <link rel="manifest" href="../../favicon/site.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="../../favicon/" />
+    <link rel="stylesheet" href="../../css/pages/contact.css" />
+    <link rel="stylesheet" href="../../fonts/css/all.css" />
     <link rel="stylesheet" href="../../css/pages/home.css" />
     <!-- analytics -->
     <link
       rel="stylesheet"
       href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
     />
   </head>
 
@@ -39,10 +49,10 @@
 
     <!-- HEADER -->
     <header class="container">
-      <div class="row">
+      <div class="row nav">
         <div class="col-12">
           <img src="../../img/headerLogo.webp" alt="Logo image" />
-          <nav class="hidden visible-md">
+          <nav class="hidden visible-md menu">
             <a href="../../">Home</a>
             <a href="../about/">About</a>
             <a href="../services/">Services</a>
@@ -50,8 +60,11 @@
             <a href="../pricing">Pricing</a>
             <a href="#">Blog</a>
             <a href="#">Pages</a>
-            <a href="./">Contact</a>
+            <a class="active" href="./">Contact</a>
           </nav>
+          <a href="#" class="hidden-md icon">
+            <i class="fa-solid fa-bars"></i>
+          </a>
         </div>
       </div>
     </header>

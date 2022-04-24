@@ -27,11 +27,19 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="../../css/pages/services.css" />
+    <link rel="stylesheet" href="../../fonts/css/all.css" />
     <link
       rel="stylesheet"
       href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
     />
     <!-- analytics -->
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -39,19 +47,22 @@
 
     <!-- HEADER -->
     <header class="container">
-      <div class="row">
+      <div class="row nav">
         <div class="col-12">
           <img class="logo" src="../../img/headerLogo.webp" alt="Logo image" />
-          <nav class="hidden visible-md">
+          <nav class="hidden visible-md menu">
             <a href="../../">Home</a>
             <a href="../about">About</a>
-            <a href="./">Services</a>
+            <a class="active" href="./">Services</a>
             <a href="../portfolio/">Portfolio</a>
             <a href="../pricing/">Pricing</a>
             <a href="#">Blog</a>
             <a href="#">Pages</a>
             <a href="../contact/">Contact</a>
           </nav>
+          <a href="#" class="hidden-md icon">
+            <i class="fa-solid fa-bars"></i>
+          </a>
         </div>
       </div>
     </header>
