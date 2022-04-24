@@ -1,0 +1,56 @@
+.img {
+  width: 100%;
+  transition: all 0.3s ease-out;
+}
+.post {
+  width: 100%;
+  overflow: hidden;
+}
+.upper-heading {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 35px;
+  transition: all 0.3s ease-out;
+}
+.blog:hover {
+  cursor: pointer;
+}
+.blog:hover .upper-heading {
+  color: var(--primary-color);
+}
+.blog:hover .img {
+  transform: scale(1.06);
+}
+
+.links img {
+  margin-right: 10px;
+}
+.links .link {
+  color: #222;
+}
+.links a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  color: #777;
+  padding-top: 10px;
+}
+.links i {
+  padding-left: 15px;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+i {
+  margin: 5px 1px 0 10px;
+}
+.section-description.mr-btm {
+  margin-bottom: 70px;
+}
