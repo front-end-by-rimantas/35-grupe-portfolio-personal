@@ -1,4 +1,11 @@
 // component imports
+
+import servicesList from '../components/servicesList/servicesList.js';
+import servicesData from '../data/servicesData.js';
+
+import { renderPlans } from '../components/plansList/plansList.js';
+import { plansData } from '../data/plansData.js';
+
 import renderLatestpost from '../components/latestPost/latestPostList.js';
 import latestPostData from '../data/latestPostData.js';
 
@@ -12,6 +19,16 @@ import { servicesSection } from '../components/sections/serviceSection.js'
 
 /* HEADER */
 headerSection('#header');
+const mainHeaderDOM = document.querySelector('.main-header');
+
+addEventListener('scroll', function () {
+    const headerPosition = 150;
+    if (scrollY > headerPosition) {
+        mainHeaderDOM.classList.add('shadow');
+    } else {
+        mainHeaderDOM.classList.remove('shadow');
+    }
+})
 /* enf of HEADER */
 
 /* Page name */
