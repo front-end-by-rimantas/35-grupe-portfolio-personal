@@ -29,6 +29,7 @@ form {
 }
 .submit {
   cursor: pointer;
+  height: 42px;
   padding: 0 15px 0 6px;
   background-color: var(--primary-color);
   color: var(--secondary-color);
