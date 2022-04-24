@@ -8,7 +8,6 @@
 @import '../components/button.css';
 @import '../components/form.css';
 
-
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* HEADER */
@@ -25,6 +24,50 @@
 /* Description end  */
 
 /* Tools expertness  */
+.tools-list {
+  display: flex;
+  flex-direction: column;
+}
+.tool {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.level {
+  width: 100%;
+  height: 10px;
+  background-color: #aaa;
+}
+.progress {
+  width: 85%;
+  height: 10px;
+  background-color: #555;
+}
+.progress2 {
+  width: 90%;
+  height: 10px;
+  background-color: #555;
+}
+.progress3 {
+  width: 70%;
+  height: 10px;
+  background-color: #555;
+}
+.progress4 {
+  width: 95%;
+  height: 10px;
+  background-color: #555;
+}
+@media (min-width: 992px) {
+  .tools-list {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .tool {
+    width: 48%;
+  }
+}
+
 /* Tools expertness end  */
 
 /* My Qualifications  */
