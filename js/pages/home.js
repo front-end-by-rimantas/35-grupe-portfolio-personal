@@ -18,6 +18,7 @@ import { plansData } from '../data/plansData.js';
 // import { footerSection } from '../components/sections/footerSection.js';
 // import { projectsSection } from '../components/sections/projectsSection.js'
 // import { plansSection } from '../components/sections/plansSection.js'
+import { servicesSection } from '../components/sections/serviceSection.js';
 
 import { featuredProjectsList } from '../components/featuredProjectsList.js/featuredProjectsList.js';
 import { featuredProjectsData } from '../data/featuredProjectsData.js';
@@ -47,8 +48,7 @@ addEventListener('scroll', function () {
 /* end of AboutMe */
 
 /* OfferedService */
-// servicesSection('#services');
-servicesList('#services_block', servicesData);
+servicesSection('#services');
 /* end of OfferedService */
 
 /* NumbersCounter */
