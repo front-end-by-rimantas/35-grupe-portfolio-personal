@@ -4,9 +4,9 @@ function featuredProjectsList(selector, data) {
   for (const item of data) {
     html += `<div class="col-12 col-sm-4 latest-projects-block">
         <div class="project-img">
-        <img src="../../img/project-img${item.image}.webp" alt="Project" class="sizing" />
+        <img src="./img/project-img${item.image}.webp" alt="Project" class="sizing" />
         <img
-        src="../../img/preview-icon.webp"
+        src="./img/preview-icon.webp"
         alt="Preview-icon"
         class="preview-hover"
       />
