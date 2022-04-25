@@ -45,6 +45,21 @@
   .tool {
     width: 48%;
   }
+  .effects {
+    order: 1;
+  }
+  .sublime {
+    order: 2;
+  }
+  .photoshop {
+    order: 3;
+  }
+  .sketch {
+    order: 4;
+  }
+  .illustrator {
+    order: 5;
+  }
 }
 
 /* Tools expertness end  */
