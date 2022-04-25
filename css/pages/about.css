@@ -16,6 +16,7 @@
 /* enf of HEADER */
 
 /* Name of page */
+@import '../components/pageName.css';
 /* end of Name of page end */
 
 /* AboutMe */
@@ -29,35 +30,35 @@
 
 /* My Qualifications  */
 .qualifications-container {
-    display: flex;
-    max-width: 500px;
-    flex-direction: column;
+  display: flex;
+  max-width: 500px;
+  flex-direction: column;
 }
 .qualifications-row {
-    display: flex;
-    margin-bottom: 10px;
-    align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
 }
 .qualification {
-    padding: 25px;
-    text-align: center; 
+  padding: 25px;
+  text-align: center;
 }
 @media (min-width: 700px) {
-    .qualification {
-        width: calc(50% - 5px);
-    }
-    .qualifications-container {
-        margin: 10px auto;
-        width: 80%;
-        max-width: 900px;
-        min-width: 700px;
-    }
-    .qualifications-row {
-       justify-content: flex-end;    
-    }
-    .qualifications-row:nth-child(even) {
-        flex-direction: row-reverse;
-    }
+  .qualification {
+    width: calc(50% - 5px);
+  }
+  .qualifications-container {
+    margin: 10px auto;
+    width: 80%;
+    max-width: 900px;
+    min-width: 700px;
+  }
+  .qualifications-row {
+    justify-content: flex-end;
+  }
+  .qualifications-row:nth-child(even) {
+    flex-direction: row-reverse;
+  }
 }
 /* My Qualifications end  */
 

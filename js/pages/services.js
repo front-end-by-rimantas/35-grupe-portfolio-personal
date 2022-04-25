@@ -15,6 +15,7 @@ import { numbersCounterContainer } from '../components/sections/numberCounterSec
 import { plansSection } from '../components/sections/plansSection.js';
 import { testimonialsSection } from '../components/sections/testimonialsSection.js';
 import { servicesSection } from '../components/sections/serviceSection.js'
+import { pageNameSection } from '../components/sections/pageNameSection.js';
 // components execution
 
 /* HEADER */
@@ -32,6 +33,7 @@ addEventListener('scroll', function () {
 /* enf of HEADER */
 
 /* Page name */
+pageNameSection('#pageName');
 /* Page name end */
 
 /* OfferedService */
