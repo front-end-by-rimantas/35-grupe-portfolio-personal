@@ -8,9 +8,8 @@ import latestPostData from '../data/latestPostData.js';
 import { renderPlans } from '../components/plansList/plansList.js';
 import { plansData } from '../data/plansData.js';
 
-
 // import { heroSection } from '../components/sections/heroSection.js'
-// import { headerSection } from '../components/sections/headerSection.js';
+import { headerSection } from '../components/sections/headerSection.js';
 // import { aboutSection } from "../components/sections/aboutSection.js";
 // import { numbersCounterContainer } from '../components/sections/numberCounterSection.js';
 // import { testimonialsSection } from '../components/sections/testimonialsSection.js'
@@ -25,7 +24,7 @@ import { featuredProjectsData } from '../data/featuredProjectsData.js';
 // components execution
 
 /* HEADER */
-// headerSection('#header');
+headerSection('#header');
 const mainHeaderDOM = document.querySelector('.main-header');
 
 addEventListener('scroll', function () {
