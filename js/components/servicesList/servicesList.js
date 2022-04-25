@@ -10,8 +10,10 @@ const servicesList = (selector, data) => {
                     </p>
                 </div>`;
   }
-
-  DOM.innerHTML = htmlString;
+  if (DOM) {
+    DOM.innerHTML = htmlString;
+  }
+  return htmlString;
 };
 
 export default servicesList;
