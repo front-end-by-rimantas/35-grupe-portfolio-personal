@@ -24,7 +24,7 @@ const projectsSection = (selector) => {
           <a class="sub-header" href="#">PRINTING</a>
         </div>
       </div>
-      <div id="featuredProjects_block" class="row">${featuredProjectsList('#featuredProjects_block', featuredProjectsData)}</div> `
+      <div id="featuredProjects_block" class="row">${featuredProjectsList('#featuredProjects_block', featuredProjectsData, imgPath)}</div> `
 }
 
 export { projectsSection }

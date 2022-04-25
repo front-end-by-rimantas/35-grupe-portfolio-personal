@@ -2,9 +2,6 @@
 import servicesList from '../components/servicesList/servicesList.js';
 import servicesData from '../data/servicesData.js';
 
-import renderLatestpost from '../components/latestPost/latestPostList.js';
-import latestPostData from '../data/latestPostData.js';
-
 import { renderPlans } from '../components/plansList/plansList.js';
 import { plansData } from '../data/plansData.js';
 
@@ -18,6 +15,7 @@ import { plansData } from '../data/plansData.js';
 // import { footerSection } from '../components/sections/footerSection.js';
 import { projectsSection } from '../components/sections/projectsSection.js'
 // import { plansSection } from '../components/sections/plansSection.js'
+import { postsSection } from '../components/sections/postsSection.js';
 
 // components execution
 
@@ -66,8 +64,7 @@ renderPlans('#plans_block', plansData);
 /* end of Plans */
 
 /* LatestPost */
-// postsSection('#posts');
-renderLatestpost('#latest_blog', latestPostData);
+postsSection('#posts');
 /* end of LatestPost */
 
 /* Sponsors */
