@@ -4,6 +4,12 @@
 
 .services-selector:hover {
   color: var(--primary-color);
+}
+
+.services-selector .service-icon:hover {
+  transition: 0.5s;
+}
+.services-selector .section-smaller:hover {
+  transition: 1s;
   cursor: pointer;
-  transition: 0.2s;
 }
