@@ -8,6 +8,7 @@ import latestPostData from '../data/latestPostData.js';
 import { renderPlans } from '../components/plansList/plansList.js';
 import { plansData } from '../data/plansData.js';
 
+
 // import { heroSection } from '../components/sections/heroSection.js'
 // import { headerSection } from '../components/sections/headerSection.js';
 // import { aboutSection } from "../components/sections/aboutSection.js";
@@ -17,6 +18,10 @@ import { plansData } from '../data/plansData.js';
 // import { footerSection } from '../components/sections/footerSection.js';
 // import { projectsSection } from '../components/sections/projectsSection.js'
 // import { plansSection } from '../components/sections/plansSection.js'
+
+import { featuredProjectsList } from '../components/featuredProjectsList.js/featuredProjectsList.js';
+import { featuredProjectsData } from '../data/featuredProjectsData.js';
+
 // components execution
 
 /* HEADER */
@@ -24,13 +29,13 @@ import { plansData } from '../data/plansData.js';
 const mainHeaderDOM = document.querySelector('.main-header');
 
 addEventListener('scroll', function () {
-    const headerPosition = 150;
-    if (scrollY > headerPosition) {
-        mainHeaderDOM.classList.add('shadow');
-    } else {
-        mainHeaderDOM.classList.remove('shadow');
-    }
-})
+  const headerPosition = 150;
+  if (scrollY > headerPosition) {
+    mainHeaderDOM.classList.add('shadow');
+  } else {
+    mainHeaderDOM.classList.remove('shadow');
+  }
+});
 /* enf of HEADER */
 
 /* Hero (hero section) */
@@ -52,6 +57,7 @@ servicesList('#services_block', servicesData);
 
 /* LatestFeaturedProjects */
 // projectsSection('#projects');
+featuredProjectsList('#featuredProjects_block', featuredProjectsData);
 /* end of LatestFeaturedProjects */
 
 /* Testimonials */
