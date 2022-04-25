@@ -17,9 +17,11 @@
 /* end of HEADER */
 
 /* Hero (hero section) */
+@import '../components/hero.css';
 /* end of Hero (hero section) */
 
 /* AboutMe */
+@import '../components/aboutMe.css';
 /* end of AboutMe */
 
 /* OfferedService */
@@ -41,9 +43,11 @@
 /* end of Plans */
 
 /* LatestPost */
+@import '../components/blog.css';
 /* end of LatestPost */
 
 /* Sponsors */
 /* end of Sponsors */
+
 /* FOOTER */
 /* end of FOOTER */

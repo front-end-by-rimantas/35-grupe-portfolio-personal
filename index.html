@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -25,7 +26,6 @@
     <link rel="manifest" href="./favicon/site.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" href="./favicon/" />
     <link rel="stylesheet" href="./css/pages/home.css" />
     <link rel="stylesheet" href="./fonts/css/all.css" />
     <!-- analytics -->
@@ -46,7 +46,7 @@
     <!-- 3rd-party: FB -->
 
     <!-- HEADER -->
-    <header class="container">
+    <header class="main-header container">
       <div class="row nav">
         <div class="col-12">
           <img src="./img/headerLogo.webp" alt="Logo image" />
@@ -69,35 +69,39 @@
     <!-- enf of HEADER -->
 
     <!-- Hero (hero section) -->
-    <section class="container bg-third-color">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <h6 class="section-headline left">This is me</h6>
-          <h1 class="section-title uppercase">PHILIP GILBERT</h1>
-          <p class="section-description left">
+    <section class="container hero bg-third-color">
+      <div class="row visible-flex hero-container-row no-margin-bottom-sm">
+        <div class="col-12 col-md-6 hero-container-text-box">
+          <h6 class="section-headline hero uppercase left">This is me</h6>
+          <h1 class="section-title hero">PHILIP GILBERT</h1>
+          <p class="section-description hero left">
             You will begin to realise why this exercise is called the Dickens
             Pattern with reference to the ghost showing Scrooge some different
             futures.
           </p>
           <a href="#" class="btn">Discover now</a>
         </div>
-        <div class="col-10 ml-1 col-md-6 ml-md-0 col-xl-5">
-          <img src="./img/hero-img.webp" alt="hero-img" class="sizing" />
+        <div class="col-8 col-md-6 ml-md-0 col-xl-6 sizing align-self">
+          <img
+            src="./img/hero-img.webp"
+            alt="hero-img"
+            style="width: 100%; object-fit: cover"
+          />
         </div>
       </div>
     </section>
     <!-- end of Hero (hero section) -->
 
     <!-- AboutMe -->
-    <section class="container">
-      <div class="row">
+    <section class="container about-me">
+      <div class="row visible-flex about-container-row no-margin">
         <div class="col-12 col-md-6">
           <img src="./img/about-img.webp" alt="Me" class="sizing" />
         </div>
         <div class="col-12 col-md-6 col-lg-5 ml-lg-1">
-          <h3 class="section-headline left">ABOUT ME</h3>
-          <h2 class="section-title uppercase-smaller">PERSONAL DETAILS</h2>
-          <p class="section-description left">
+          <h3 class="section-headline uppercase aboutMe left">ABOUT ME</h3>
+          <h2 class="section-title about-me">PERSONAL DETAILS</h2>
+          <p class="section-description about-me left">
             Here, I focus on a range of items and features that we use in life
             without giving them a second thought. such as Coca Cola. Dolor sit
             amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
@@ -167,80 +171,7 @@
           <a class="sub-header" href="#">PRINTING</a>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12 col-sm-4 latest-projects-block">
-          <div class="project-img">
-            <img src="./img/project-img1.webp" alt="Project" class="sizing" />
-            <img
-              src="./img/preview-icon.webp"
-              alt="Preview-icon"
-              class="preview-hover"
-            />
-          </div>
-          <h3 class="section-smaller">2D Vinyl Design</h3>
-          <p class="section-description center">vector</p>
-        </div>
-        <div class="col-12 col-sm-4 latest-projects-block">
-          <div class="project-img">
-            <img src="./img/project-img2.webp" alt="Project" class="sizing" />
-            <img
-              src="./img/preview-icon.webp"
-              alt="Preview-icon"
-              class="preview-hover"
-            />
-          </div>
-          <h3 class="section-smaller">2D Vinyl Design</h3>
-          <p class="section-description center">vector</p>
-        </div>
-        <div class="col-12 col-sm-4 latest-projects-block">
-          <div class="project-img">
-            <img src="./img/project-img3.webp" alt="Project" class="sizing" />
-            <img
-              src="./img/preview-icon.webp"
-              alt="Preview-icon"
-              class="preview-hover"
-            />
-          </div>
-          <h3 class="section-smaller">Creative Poster Design</h3>
-          <p class="section-description center">Agency</p>
-        </div>
-        <div class="col-12 col-sm-4 latest-projects-block">
-          <div class="project-img">
-            <img src="./img/project-img4.webp" alt="Project" class="sizing" />
-            <img
-              src="./img/preview-icon.webp"
-              alt="Preview-icon"
-              class="preview-hover"
-            />
-          </div>
-          <h3 class="section-smaller">Embosed Logo Design</h3>
-          <p class="section-description center">Portal</p>
-        </div>
-        <div class="col-12 col-sm-4 latest-projects-block">
-          <div class="project-img">
-            <img src="./img/project-img5.webp" alt="Project" class="sizing" />
-            <img
-              src="./img/preview-icon.webp"
-              alt="Preview-icon"
-              class="preview-hover"
-            />
-          </div>
-          <h3 class="section-smaller">3D Helmet Design</h3>
-          <p class="section-description center">vector</p>
-        </div>
-        <div class="col-12 col-sm-4 latest-projects-block">
-          <div class="project-img">
-            <img src="./img/project-img6.webp" alt="Project" class="sizing" />
-            <img
-              src="./img/preview-icon.webp"
-              alt="Preview-icon"
-              class="preview-hover"
-            />
-          </div>
-          <h3 class="section-smaller">2D Vinyl Design</h3>
-          <p class="section-description center">raster</p>
-        </div>
-      </div>
+      <div id="featuredProjects_block" class="row"></div>
     </section>
     <!-- end of LatestFeaturedProjects -->
 
@@ -270,7 +201,7 @@
           </p>
         </div>
       </div>
-      <div id="plans_block" class="row bg-third-color"></div>
+      <div id="plans_block" class="row"></div>
     </section>
     <!-- end of Plans -->
 
@@ -286,9 +217,7 @@
           </p>
         </div>
       </div>
-      <div id="latest_blog" class="row">
-      
-      </div>
+      <div id="latest_blog" class="row"></div>
     </section>
     <!-- end of LatestPost -->
 
@@ -334,6 +263,5 @@
     </footer>
     <!-- end of FOOTER -->
     <script src="./js/pages/home.js" type="module" defer></script>
-    
   </body>
 </html>
