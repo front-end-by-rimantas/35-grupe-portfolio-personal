@@ -16,11 +16,8 @@ import { plansData } from '../data/plansData.js';
 // import { testimonialsSection } from '../components/sections/testimonialsSection.js'
 // import { sponsorsSection } from '../components/sections/sponsorsSection.js'
 // import { footerSection } from '../components/sections/footerSection.js';
-// import { projectsSection } from '../components/sections/projectsSection.js'
+import { projectsSection } from '../components/sections/projectsSection.js'
 // import { plansSection } from '../components/sections/plansSection.js'
-
-import { featuredProjectsList } from '../components/featuredProjectsList.js/featuredProjectsList.js';
-import { featuredProjectsData } from '../data/featuredProjectsData.js';
 
 // components execution
 
@@ -56,8 +53,7 @@ servicesList('#services_block', servicesData);
 /* end of NumbersCounter */
 
 /* LatestFeaturedProjects */
-// projectsSection('#projects');
-featuredProjectsList('#featuredProjects_block', featuredProjectsData);
+projectsSection('#projects');
 /* end of LatestFeaturedProjects */
 
 /* Testimonials */

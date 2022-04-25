@@ -15,6 +15,9 @@ function featuredProjectsList(selector, data) {
       <p class="section-description center">${item.description}</p>
       </div>`;
   }
-  DOM.innerHTML = html;
+  if (DOM) {
+    DOM.innerHTML = html;
+  }
+  return html;
 }
 export { featuredProjectsList };

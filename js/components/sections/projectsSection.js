@@ -1,3 +1,5 @@
+import { featuredProjectsList } from '../../components/featuredProjectsList.js/featuredProjectsList.js';
+import { featuredProjectsData } from '../../data/featuredProjectsData.js';
 const projectsSection = (selector) => {
   const DOM = document.querySelector(selector)
   let imgPath = '';
@@ -22,80 +24,7 @@ const projectsSection = (selector) => {
           <a class="sub-header" href="#">PRINTING</a>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12 col-sm-4 latest-projects-block">
-          <div class="project-img">
-            <img src="${imgPath}./img/project-img1.webp" alt="Project" class="sizing" />
-            <img
-              src="${imgPath}./img/preview-icon.webp"
-              alt="Preview-icon"
-              class="preview-hover"
-            />
-          </div>
-          <h3 class="section-smaller">2D Vinyl Design</h3>
-          <p class="section-description center">vector</p>
-        </div>
-        <div class="col-12 col-sm-4 latest-projects-block">
-          <div class="project-img">
-            <img src="${imgPath}./img/project-img2.webp" alt="Project" class="sizing" />
-            <img
-              src="${imgPath}./img/preview-icon.webp"
-              alt="Preview-icon"
-              class="preview-hover"
-            />
-          </div>
-          <h3 class="section-smaller">2D Vinyl Design</h3>
-          <p class="section-description center">vector</p>
-        </div>
-        <div class="col-12 col-sm-4 latest-projects-block">
-          <div class="project-img">
-            <img src="${imgPath}./img/project-img3.webp" alt="Project" class="sizing" />
-            <img
-              src="${imgPath}./img/preview-icon.webp"
-              alt="Preview-icon"
-              class="preview-hover"
-            />
-          </div>
-          <h3 class="section-smaller">Creative Poster Design</h3>
-          <p class="section-description center">Agency</p>
-        </div>
-        <div class="col-12 col-sm-4 latest-projects-block">
-          <div class="project-img">
-            <img src="${imgPath}./img/project-img4.webp" alt="Project" class="sizing" />
-            <img
-              src="${imgPath}./img/preview-icon.webp"
-              alt="Preview-icon"
-              class="preview-hover"
-            />
-          </div>
-          <h3 class="section-smaller">Embosed Logo Design</h3>
-          <p class="section-description center">Portal</p>
-        </div>
-        <div class="col-12 col-sm-4 latest-projects-block">
-          <div class="project-img">
-            <img src="${imgPath}./img/project-img5.webp" alt="Project" class="sizing" />
-            <img
-              src="${imgPath}./img/preview-icon.webp"
-              alt="Preview-icon"
-              class="preview-hover"
-            />
-          </div>
-          <h3 class="section-smaller">3D Helmet Design</h3>
-          <p class="section-description center">vector</p>
-        </div>
-        <div class="col-12 col-sm-4 latest-projects-block">
-          <div class="project-img">
-            <img src="${imgPath}./img/project-img6.webp" alt="Project" class="sizing" />
-            <img
-              src="${imgPath}./img/preview-icon.webp"
-              alt="Preview-icon"
-              class="preview-hover"
-            />
-          </div>
-          <h3 class="section-smaller">2D Vinyl Design</h3>
-          <p class="section-description center">raster</p>
-        </div>
-      </div>`
+      <div id="featuredProjects_block" class="row">${featuredProjectsList('#featuredProjects_block', featuredProjectsData)}</div> `
 }
 
 export { projectsSection }
