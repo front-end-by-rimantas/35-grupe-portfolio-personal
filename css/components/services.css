@@ -1,3 +1,8 @@
 .service-icon {
   font-size: 35px;
 }
+
+.services-selector:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
