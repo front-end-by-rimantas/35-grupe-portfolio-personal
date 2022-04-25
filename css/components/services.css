@@ -5,4 +5,5 @@
 .services-selector:hover {
   color: var(--primary-color);
   cursor: pointer;
+  transition: 0.2s;
 }
