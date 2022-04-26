@@ -1,7 +1,8 @@
 // component imports
-import { headerSection } from '../components/sections/headerSection.js';
-import { footerSection } from '../components/sections/footerSection.js';
-import { plansSection } from '../components/sections/plansSection.js';
+import { headerSection } from '../components/sections/headerSection.js'
+import { footerSection } from '../components/sections/footerSection.js'
+import { plansSection } from '../components/sections/plansSection.js'
+import { pageNameSection } from '../components/sections/pageNameSection.js';
 // components execution
 
 /* HEADER */
@@ -19,6 +20,7 @@ addEventListener('scroll', function () {
 /* enf of HEADER */
 
 /* Name of page */
+pageNameSection('#pageName');
 /* end of Name of page end */
 
 /* Plans */

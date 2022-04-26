@@ -2,8 +2,9 @@
 import { aboutSection } from '../components/sections/aboutSection.js';
 import { footerSection } from '../components/sections/footerSection.js';
 import { headerSection } from '../components/sections/headerSection.js';
-import { testimonialsSection } from '../components/sections/testimonialsSection.js';
-import { sponsorsSection } from '../components/sections/sponsorsSection.js';
+import { testimonialsSection } from '../components/sections/testimonialsSection.js'
+import { sponsorsSection } from '../components/sections/sponsorsSection.js'
+import { pageNameSection } from '../components/sections/pageNameSection.js';
 // components execution
 
 /* HEADER */
@@ -21,6 +22,7 @@ addEventListener('scroll', function () {
 /* enf of HEADER */
 
 /* Name of page */
+pageNameSection('#pageName');
 /* end of Name of page end */
 
 /* AboutMe */
