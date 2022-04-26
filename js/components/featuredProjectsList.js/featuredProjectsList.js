@@ -2,9 +2,9 @@ function featuredProjectsList(selector, data, imgPath) {
   const DOM = document.querySelector(selector);
   let html = '';
   for (const item of data) {
-    html += `<div class="col-12 col-sm-4 latest-projects-block">
+    html += `<div class="col-12 col-sm-4">
         <div class="project-img">
-        <img src="${imgPath}./img/project-img${item.image}.webp" alt="Project" class="sizing" />
+        <img src="${imgPath}./img/project-img${item.image}.webp" title=${item.description} alt="Project" class="sizing" />
         <img
         src="${imgPath}./img/preview-icon.webp"
         alt="Preview-icon"
