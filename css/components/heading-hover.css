@@ -18,8 +18,10 @@
   font-size: 12px;
   font-weight: 500;
 }
-.sub-header:not(:last-child) {
-  margin-right: 20px;
+@media (min-width: 991px) {
+  .sub-header {
+    padding: 10px;
+  }
 }
 .sub-header:hover::before {
   width: 1.5em;
