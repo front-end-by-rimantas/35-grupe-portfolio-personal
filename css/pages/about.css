@@ -27,6 +27,44 @@
 /* Description end  */
 
 /* Tools expertness  */
+.tools-list {
+  display: flex;
+  flex-direction: column;
+}
+.tool {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.tool progress {
+  width: 100%;
+  height: 15px;
+}
+@media (min-width: 992px) {
+  .tools-list {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .tool {
+    width: 48%;
+  }
+  .effects {
+    order: 1;
+  }
+  .sublime {
+    order: 2;
+  }
+  .photoshop {
+    order: 3;
+  }
+  .sketch {
+    order: 4;
+  }
+  .illustrator {
+    order: 5;
+  }
+}
+
 /* Tools expertness end  */
 
 /* My Qualifications  */
