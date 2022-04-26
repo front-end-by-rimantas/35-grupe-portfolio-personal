@@ -9,15 +9,18 @@
   left: 5px;
   transition: 0.5s;
 }
-
 .sub-header {
   text-decoration: none;
   color: var(--fourth-color);
   padding: 5px;
   position: relative;
   width: 0;
+  font-size: 12px;
+  font-weight: 500;
 }
-
+.sub-header:not(:last-child) {
+  margin-right: 20px;
+}
 .sub-header:hover::before {
   width: 1.5em;
 }
