@@ -8,7 +8,7 @@ import { plansData } from '../data/plansData.js';
 import { numbersList } from '../components/numbersList/numbersList.js';
 import { numbers } from '../data/numbers.js';
 
-import { heroSection } from '../components/sections/heroSection.js'
+import { heroSection } from '../components/sections/heroSection.js';
 import { headerSection } from '../components/sections/headerSection.js';
 
 
@@ -54,7 +54,7 @@ servicesSection('#services');
 /* end of OfferedService */
 
 /* NumbersCounter */
-numbersList('#numbers', numbers);
+numbersList('#numberCounter', numbers);
 
 // numbersCounterContainer('#numberCounter');
 /* end of NumbersCounter */
