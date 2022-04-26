@@ -13,9 +13,11 @@ function renderPlans(selector, data) {
         <h2 class="section-cost">${item.currency} ${item.price}</h2>
         <a href="#" class="buy-plan">buy now</a>
       </div>`;
-    }
-
+  }
+  if (DOM) {
     DOM.innerHTML = HTML;
+  }
+  return HTML;
 }
 
 export { renderPlans };

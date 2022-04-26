@@ -15,8 +15,10 @@ function renderLatestpost(selector, data) {
     <p class='section-description mr-btm'>${item.desc}</p>
     </div>`;
   }
-
-  DOM.innerHTML = html;
+  if (DOM) {
+    DOM.innerHTML = html;
+  }
+  return html;
 }
 
 export default renderLatestpost;

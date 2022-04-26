@@ -1,14 +1,30 @@
 // component imports
-
+import { aboutSection } from '../components/sections/aboutSection.js';
+import { footerSection } from '../components/sections/footerSection.js';
+import { headerSection } from '../components/sections/headerSection.js';
+import { testimonialsSection } from '../components/sections/testimonialsSection.js';
+import { sponsorsSection } from '../components/sections/sponsorsSection.js';
 // components execution
 
 /* HEADER */
+headerSection('#header');
+const mainHeaderDOM = document.querySelector('.main-header');
+
+addEventListener('scroll', function () {
+  const headerPosition = 150;
+  if (scrollY > headerPosition) {
+    mainHeaderDOM.classList.add('shadow');
+  } else {
+    mainHeaderDOM.classList.remove('shadow');
+  }
+});
 /* enf of HEADER */
 
 /* Name of page */
 /* end of Name of page end */
 
 /* AboutMe */
+aboutSection('#about');
 /* end of AboutMe */
 
 /* Description  */
@@ -21,10 +37,13 @@
 /* My Qualifications end  */
 
 /* Testimonials  */
+testimonialsSection('#testimonials');
 /* end of Testimonials  */
 
 /* Sponsors  */
+sponsorsSection('#sponsors');
 /* end of Sponsors  */
 
 /* FOOTER  */
+footerSection('#footer');
 /* end of FOOTER  */
