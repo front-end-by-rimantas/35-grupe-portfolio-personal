@@ -31,9 +31,10 @@ const projectsSection = (selector) => {
     const elementsList =  document.getElementsByClassName("aa");
       for (let i = 0; i < elementsList.length; i++) {
         elementsList[i].addEventListener("click", function() {
-        this.className += " aktyvi";
+       
         const dabartinis = document.getElementsByClassName("aktyvi");
         dabartinis[0].className = dabartinis[0].className.replace("aktyvi", "")
+         this.className += " aktyvi";
         });
   }
 }
