@@ -18,6 +18,7 @@ import { testimonialsSection } from '../components/sections/testimonialsSection.
 // import { footerSection } from '../components/sections/footerSection.js';
 import { projectsSection } from '../components/sections/projectsSection.js'
 // import { plansSection } from '../components/sections/plansSection.js'
+import { servicesSection } from '../components/sections/serviceSection.js';
 import { postsSection } from '../components/sections/postsSection.js';
 
 // components execution
@@ -45,8 +46,7 @@ aboutSection('#about');
 /* end of AboutMe */
 
 /* OfferedService */
-// servicesSection('#services');
-servicesList('#services_block', servicesData);
+servicesSection('#services');
 /* end of OfferedService */
 
 /* NumbersCounter */
