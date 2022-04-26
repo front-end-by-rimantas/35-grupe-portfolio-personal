@@ -2,30 +2,25 @@
 import servicesList from '../components/servicesList/servicesList.js';
 import servicesData from '../data/servicesData.js';
 
-import renderLatestpost from '../components/latestPost/latestPostList.js';
-import latestPostData from '../data/latestPostData.js';
-
 import { renderPlans } from '../components/plansList/plansList.js';
 import { plansData } from '../data/plansData.js';
 
-
 import { heroSection } from '../components/sections/heroSection.js'
-// import { headerSection } from '../components/sections/headerSection.js';
+import { headerSection } from '../components/sections/headerSection.js';
+
 // import { aboutSection } from "../components/sections/aboutSection.js";
 // import { numbersCounterContainer } from '../components/sections/numberCounterSection.js';
-// import { testimonialsSection } from '../components/sections/testimonialsSection.js'
+import { testimonialsSection } from '../components/sections/testimonialsSection.js'
 // import { sponsorsSection } from '../components/sections/sponsorsSection.js'
 // import { footerSection } from '../components/sections/footerSection.js';
-// import { projectsSection } from '../components/sections/projectsSection.js'
+import { projectsSection } from '../components/sections/projectsSection.js'
 // import { plansSection } from '../components/sections/plansSection.js'
-
-import { featuredProjectsList } from '../components/featuredProjectsList.js/featuredProjectsList.js';
-import { featuredProjectsData } from '../data/featuredProjectsData.js';
+import { postsSection } from '../components/sections/postsSection.js';
 
 // components execution
 
 /* HEADER */
-// headerSection('#header');
+headerSection('#header');
 const mainHeaderDOM = document.querySelector('.main-header');
 
 addEventListener('scroll', function () {
@@ -56,12 +51,11 @@ servicesList('#services_block', servicesData);
 /* end of NumbersCounter */
 
 /* LatestFeaturedProjects */
-// projectsSection('#projects');
-featuredProjectsList('#featuredProjects_block', featuredProjectsData);
+projectsSection('#projects');
 /* end of LatestFeaturedProjects */
 
 /* Testimonials */
-// testimonialsSection('#testimonials');
+testimonialsSection('#testimonials');
 /* end of Testimonials */
 
 /* Plans */
@@ -70,8 +64,7 @@ renderPlans('#plans_block', plansData);
 /* end of Plans */
 
 /* LatestPost */
-// postsSection('#posts');
-renderLatestpost('#latest_blog', latestPostData);
+postsSection('#posts');
 /* end of LatestPost */
 
 /* Sponsors */
