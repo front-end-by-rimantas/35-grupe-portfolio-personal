@@ -1,7 +1,6 @@
 const testimonialsSection = (selector) => {
   const DOM = document.querySelector(selector);
   DOM.innerHTML = `
-  <section class="container bg-third-color">
       <div class="row">
         <div class="col-12 col-md-10 col-lg-8 ml-md-1 ml-lg-2 center">
           <h2 class="section-title center">Client's Feedback About Me</h2>
@@ -11,7 +10,6 @@ const testimonialsSection = (selector) => {
           </p>
         </div>
         <div class="col-12">SLIDER/CAROUSEL</div>
-      </div>
-    </section>`
+      </div>`
 }
 export { testimonialsSection }
