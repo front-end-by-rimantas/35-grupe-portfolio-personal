@@ -3,7 +3,9 @@
 }
 
 .services-selector:hover > .service-icon {
-  color: var(--primary-color);
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transition-delay: 0.7ms;
 }
 .services-selector:hover > .serviceTitle-selector {
