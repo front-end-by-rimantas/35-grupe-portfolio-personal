@@ -5,8 +5,9 @@ import servicesData from '../data/servicesData.js';
 import { renderPlans } from '../components/plansList/plansList.js';
 import { plansData } from '../data/plansData.js';
 
-// import { heroSection } from '../components/sections/heroSection.js'
+import { heroSection } from '../components/sections/heroSection.js'
 import { headerSection } from '../components/sections/headerSection.js';
+
 // import { aboutSection } from "../components/sections/aboutSection.js";
 // import { numbersCounterContainer } from '../components/sections/numberCounterSection.js';
 import { testimonialsSection } from '../components/sections/testimonialsSection.js'
@@ -33,7 +34,7 @@ addEventListener('scroll', function () {
 /* enf of HEADER */
 
 /* Hero (hero section) */
-// heroSection('#hero');
+heroSection('#hero');
 /* end of Hero (hero section) */
 
 /* AboutMe */
