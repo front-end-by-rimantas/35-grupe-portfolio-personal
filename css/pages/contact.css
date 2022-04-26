@@ -24,6 +24,51 @@
 /* end of Map */
 
 /* Contact */
+.contact > div {
+  display: flex;
+  margin-bottom: 15px;
+}
+.contact span {
+  margin-right: 30px;
+}
+.form {
+  margin-top: 30px;
+}
+.form-flex {
+  display: flex;
+  flex-direction: column;
+}
+.info-inp {
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  margin-bottom: 25px;
+  padding: 15px;
+}
+.form .message {
+  margin: 10px 0 15px;
+}
+.button {
+  display: flex;
+  justify-content: end;
+}
+@media (min-width: 992px) {
+  .form {
+    margin: 0;
+  }
+  .form-flex {
+    flex-direction: row;
+  }
+  .info-inp {
+    flex: 50%;
+    margin: 0;
+  }
+  .form .message {
+    flex: 50%;
+    margin: 0 0 25px 25px;
+  }
+}
 
 /* end of Contact */
 
