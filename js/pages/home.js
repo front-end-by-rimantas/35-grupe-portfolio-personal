@@ -17,7 +17,7 @@ import { testimonialsSection } from '../components/sections/testimonialsSection.
 // import { sponsorsSection } from '../components/sections/sponsorsSection.js'
 // import { footerSection } from '../components/sections/footerSection.js';
 import { projectsSection } from '../components/sections/projectsSection.js'
-// import { plansSection } from '../components/sections/plansSection.js'
+import { plansSection } from '../components/sections/plansSection.js'
 import { servicesSection } from '../components/sections/serviceSection.js';
 import { postsSection } from '../components/sections/postsSection.js';
 
@@ -62,8 +62,7 @@ testimonialsSection('#testimonials');
 /* end of Testimonials */
 
 /* Plans */
-// plansSection('#plans');
-renderPlans('#plans_block', plansData);
+plansSection('#plans');
 /* end of Plans */
 
 /* LatestPost */
