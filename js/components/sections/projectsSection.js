@@ -19,7 +19,7 @@ const projectsSection = (selector) => {
       </div>
       <div class="row">
         <div class="col-12 col-md-6 ml-md-3 col-xl-4 ml-xl-4">
-          <a class="sub-header aa active" href="#projects">ALL</a>
+          <a class="sub-header aa aktyvi" href="#projects">ALL</a>
           <a class="sub-header aa" href="#projects">VECTOR</a>
           <a class="sub-header aa" href="#projects">RASTER</a>
           <a class="sub-header aa" href="#projects">UI/UX</a>
@@ -27,34 +27,15 @@ const projectsSection = (selector) => {
         </div>
       </div>
       <div id="featuredProjects_block" class="row">${featuredProjectsList('#featuredProjects_block', featuredProjectsData, imgPath)}</div> `
-  
- 
-//   const dom = document.querySelector(".aa");
-//   console.log(dom);
 
- 
-// function activeClass() {
-//   // const all = document.querySelectorAll('a.aa');
-//   // console.log(all);
-  
-//   if (dom.classList.contains('.active')) {
-//     // all.classList.remove('.active');
-//     dom.classList.remove('active');
-//   } else {
-//     // dom.classList.remove('.active');
-//     dom.classList.add('active');
-//   } 
-// } 
-// dom.addEventListener("click", activeClass());
+    const elementsList =  document.getElementsByClassName("aa");
+      for (let i = 0; i < elementsList.length; i++) {
+        elementsList[i].addEventListener("click", function() {
+        this.className += " aktyvi";
+        const dabartinis = document.getElementsByClassName("aktyvi");
+        dabartinis[0].className = dabartinis[0].className.replace("aktyvi", "")
+        });
+  }
 }
 
-
-
-
-
 export { projectsSection }
-
-
-
-
-// addEventListener()
