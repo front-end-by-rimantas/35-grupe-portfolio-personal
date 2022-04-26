@@ -6,8 +6,9 @@
 
 /* components */
 @import '../components/button.css';
-@import '../components/heading.css';
 @import '../components/form.css';
+@import '../components/hover.css';
+@import '../components/heading.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
@@ -19,45 +20,84 @@
 /* end of Name of page end */
 
 /* AboutMe */
+@import '../components/aboutMe.css';
 /* end of AboutMe */
 
 /* Description  */
 /* Description end  */
 
 /* Tools expertness  */
+.tools-list {
+  display: flex;
+  flex-direction: column;
+}
+.tool {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.tool progress {
+  width: 100%;
+  height: 15px;
+}
+@media (min-width: 992px) {
+  .tools-list {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .tool {
+    width: 48%;
+  }
+  .effects {
+    order: 1;
+  }
+  .sublime {
+    order: 2;
+  }
+  .photoshop {
+    order: 3;
+  }
+  .sketch {
+    order: 4;
+  }
+  .illustrator {
+    order: 5;
+  }
+}
+
 /* Tools expertness end  */
 
 /* My Qualifications  */
 .qualifications-container {
-    display: flex;
-    max-width: 500px;
-    flex-direction: column;
+  display: flex;
+  max-width: 500px;
+  flex-direction: column;
 }
 .qualifications-row {
-    display: flex;
-    margin-bottom: 10px;
-    align-items: center;
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
 }
 .qualification {
-    padding: 25px;
-    text-align: center; 
+  padding: 25px;
+  text-align: center;
 }
 @media (min-width: 700px) {
-    .qualification {
-        width: calc(50% - 5px);
-    }
-    .qualifications-container {
-        margin: 10px auto;
-        width: 80%;
-        max-width: 900px;
-        min-width: 700px;
-    }
-    .qualifications-row {
-       justify-content: flex-end;    
-    }
-    .qualifications-row:nth-child(even) {
-        flex-direction: row-reverse;
-    }
+  .qualification {
+    width: calc(50% - 5px);
+  }
+  .qualifications-container {
+    margin: 10px auto;
+    width: 80%;
+    max-width: 900px;
+    min-width: 700px;
+  }
+  .qualifications-row {
+    justify-content: flex-end;
+  }
+  .qualifications-row:nth-child(even) {
+    flex-direction: row-reverse;
+  }
 }
 /* My Qualifications end  */
 

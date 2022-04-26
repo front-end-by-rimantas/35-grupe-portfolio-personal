@@ -13,9 +13,6 @@ const servicesSection = (selector) => {
       </p>
     </div>
   </div>
-  <div id="services_block" class="row">${servicesList(
-    '#services_block',
-    servicesData
-  )}</div>`;
-};
-export { servicesSection };
+  <div id="services_block" class="row">${servicesList('#services_block', servicesData)}</div>`
+}
+export { servicesSection }
