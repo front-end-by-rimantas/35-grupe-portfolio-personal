@@ -49,6 +49,10 @@ body {
   margin: 0px;
 }
 
+i {
+  margin: 5px 1px 0 10px;
+}
+
 /* sm */
 @media (min-width: 575px) {
   .row.no-margin-bottom-sm {

@@ -15,7 +15,7 @@ import { aboutSection } from "../components/sections/aboutSection.js";
 // import { numbersCounterContainer } from '../components/sections/numberCounterSection.js';
 import { testimonialsSection } from '../components/sections/testimonialsSection.js'
 // import { sponsorsSection } from '../components/sections/sponsorsSection.js'
-// import { footerSection } from '../components/sections/footerSection.js';
+import { footerSection } from '../components/sections/footerSection.js';
 import { projectsSection } from '../components/sections/projectsSection.js'
 // import { plansSection } from '../components/sections/plansSection.js'
 import { servicesSection } from '../components/sections/serviceSection.js';
@@ -75,5 +75,5 @@ postsSection('#posts');
 /* end of Sponsors */
 
 /* FOOTER */
-// footerSection('#footer');
+footerSection('#footer');
 /* end of FOOTER */
