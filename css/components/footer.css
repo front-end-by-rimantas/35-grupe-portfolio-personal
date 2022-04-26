@@ -24,11 +24,12 @@ footer.container {
   border: none;
   outline: none;
   margin-bottom: 25px;
+  color: #222;
 }
 .email::placeholder {
   font-size: 14px;
   letter-spacing: 1.5px;
-  color: #999;
+  color: #777;
 }
 form {
   display: flex;
