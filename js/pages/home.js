@@ -8,7 +8,10 @@ import { plansData } from '../data/plansData.js';
 import { heroSection } from '../components/sections/heroSection.js'
 import { headerSection } from '../components/sections/headerSection.js';
 
-// import { aboutSection } from "../components/sections/aboutSection.js";
+
+// import { heroSection } from '../components/sections/heroSection.js'
+// import { headerSection } from '../components/sections/headerSection.js';
+import { aboutSection } from "../components/sections/aboutSection.js";
 // import { numbersCounterContainer } from '../components/sections/numberCounterSection.js';
 import { testimonialsSection } from '../components/sections/testimonialsSection.js'
 // import { sponsorsSection } from '../components/sections/sponsorsSection.js'
@@ -38,7 +41,7 @@ heroSection('#hero');
 /* end of Hero (hero section) */
 
 /* AboutMe */
-// aboutSection('#about');
+aboutSection('#about');
 /* end of AboutMe */
 
 /* OfferedService */
