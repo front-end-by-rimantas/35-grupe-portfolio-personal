@@ -29,13 +29,29 @@ const projectsSection = (selector) => {
       <div id="featuredProjects_block" class="row">${featuredProjectsList('#featuredProjects_block', featuredProjectsData, imgPath)}</div> `
 
     const elementsList =  document.getElementsByClassName("aa");
-      for (let i = 0; i < elementsList.length; i++) {
-        elementsList[i].addEventListener("click", function() {
-       
-        const dabartinis = document.getElementsByClassName("aktyvi");
-        dabartinis[0].className = dabartinis[0].className.replace("aktyvi", "")
-         this.className += " aktyvi";
-        });
+    for (let i = 0; i < elementsList.length; i++) {
+    elementsList[i].addEventListener("click", function() {
+      const dabartinis = document.getElementsByClassName("aktyvi");
+      dabartinis[0].className = dabartinis[0].className.replace("aktyvi", "")
+      this.className += " aktyvi";
+
+    const aktyvus = document.querySelector(".aktyvi");
+      if (aktyvus.innerHTML.includes('VECTOR')) {
+        const featurai = document.getElementsByClassName('vienas-vienetas');
+        console.log(featurai);
+        console.log(featurai[0].description);
+        for (let a = 0; a < featurai.length; a++) {
+          
+          if (featurai.description !== 'vector') {
+          // if (featurai.innerText.includes('vector')) {
+          let featuras = featurai[a];
+          featuras.classList.add('dingo');
+          // } else {
+          //   featuras.classList.remove('dingo')
+          }
+        }
+      }
+    });
   }
 }
 
