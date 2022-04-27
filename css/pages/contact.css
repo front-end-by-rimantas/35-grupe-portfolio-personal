@@ -24,6 +24,12 @@
 /* end of Map */
 
 /* Contact */
+.container.pad {
+  padding-top: 0;
+}
+.contact {
+  margin-bottom: 35px;
+}
 .contact > div {
   display: flex;
   margin-bottom: 15px;
@@ -32,44 +38,31 @@
   margin-right: 30px;
 }
 .form {
-  margin-top: 30px;
-}
-.form-flex {
   display: flex;
-  flex-direction: column;
-}
-.info-inp {
-  display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+  gap: 20px;
+  max-height: 260px;
 }
 .form input {
-  margin-bottom: 25px;
   padding: 15px;
+  width: 50%;
 }
-.form .message {
-  margin: 10px 0 15px;
+.form textarea {
+  height: 190px;
+  width: 50%;
 }
-.button {
-  display: flex;
-  justify-content: end;
+.btn {
+  align-self: flex-end;
 }
-@media (min-width: 992px) {
+@media (max-width: 991px) {
   .form {
-    margin: 0;
+    min-height: 500px;
   }
-  .form-flex {
-    flex-direction: row;
-  }
-  .info-inp {
-    flex: 50%;
-    margin: 0;
-  }
-  .form .message {
-    flex: 50%;
-    margin: 0 0 25px 25px;
+  .form input,
+  .form textarea {
+    width: 100%;
   }
 }
-
 /* end of Contact */
 
 /* FOOTER */
