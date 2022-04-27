@@ -5,7 +5,7 @@ const servicesSection = (selector) => {
   const DOM = document.querySelector(selector);
   DOM.innerHTML = `
   <div class="row">
-    <div class="col-12 col-lg-8 ml-lg-2">
+    <div class="col-12 col-lg-8 ml-lg-2 services-selector">
       <h1 class="section-title">My Offered Services</h1>
       <p class="section-description service">
         At about this time of year, some months after New Year’s resolutions
