@@ -1,3 +1,15 @@
 .service-icon {
   font-size: 35px;
 }
+
+.services-selector:hover > .service-icon {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition-delay: 0.7ms;
+}
+.services-selector:hover > .serviceTitle-selector {
+  color: var(--primary-color);
+  transition: 0.3s;
+  cursor: pointer;
+}
