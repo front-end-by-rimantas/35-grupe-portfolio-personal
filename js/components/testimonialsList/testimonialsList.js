@@ -3,20 +3,26 @@ function testimonialsList(selector, data) {
   let html = '';
   for (const item of data) {
     html += `<div class="col-12 testimonials-slider-content">
+    <div class="testimonials-items">
       <div class="testimonials-card">
-          <img src="./img/blog-${item.picture}-img.webp" alt="author" />
-          <div class="testimonials-content">
-            <p class="section-description">
-              ${item.text}
-            </p>
-            <h3 class="section-smaller">${item.feedbackProvider}</h3>
-            <p class="section-description">${item.job}</p>
-          </div>
+        <div class="testimonials-content">
+          <img
+            src="./img/blog-${item.picture}-img.webp"
+            alt="author"
+            class="testimonials-img"
+          />
+          <p class="section-description">
+          ${item.text}
+          </p>
+          <h3 class="section-smaller">${item.feedbackProvider}</h3>
+          <p class="section-description">${item.job}</p>
         </div>
-        <div class="testimonials-actions">
-          <span class="lnr lnr-arrow-left angle-icon"></span>
-          <span class="lnr lnr-arrow-right angle-icon"></span>
-        </div>
+      </div>
+    </div>
+    <div class="testimonials-actions">
+      <span class="lnr lnr-arrow-up carousel-btn"></span>
+      <span class="lnr lnr-arrow-down carousel-btn"></span>
+    </div>
     </div>`;
   }
   if (DOM) {
