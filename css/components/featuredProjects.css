@@ -4,3 +4,6 @@
 .latest-projects-block > .section-description {
     margin-top: 0;
 }
+#projects > .section-title {
+    line-height: 1.2em;
+}
