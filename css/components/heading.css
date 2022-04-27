@@ -32,7 +32,9 @@ p.section-description {
   margin-bottom: 16px;
   line-height: 1.6em;
 }
-
+p.section-description.center {
+  color: #fff;
+}
 p.section-description.hero {
   margin-bottom: 16px;
 }
@@ -55,8 +57,8 @@ p.section-description.about-me {
 }
 
 .section-headline {
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 35px;
 }
 
 .section-headline.uppercase {
