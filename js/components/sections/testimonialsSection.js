@@ -9,7 +9,7 @@ const testimonialsSection = (selector) => {
             it. Ask any chain smoker or even a person.
           </p>
         </div>
-        <div class="col-12">SLIDER/CAROUSEL</div>
-      </div>`
-}
-export { testimonialsSection }
+        <div class="col-12"></div>
+      </div>`;
+};
+export { testimonialsSection };
