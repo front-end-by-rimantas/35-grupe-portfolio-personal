@@ -38,17 +38,53 @@ const projectsSection = (selector) => {
     const aktyvus = document.querySelector(".aktyvi");
       if (aktyvus.innerHTML.includes('VECTOR')) {
         const featurai = document.getElementsByClassName('vienas-vienetas');
-        console.log(featurai);
-        console.log(featurai[0].description);
         for (let a = 0; a < featurai.length; a++) {
-          
-          if (featurai.description !== 'vector') {
-          // if (featurai.innerText.includes('vector')) {
+          if (featurai[a].children[2].innerText !== 'vector') {
+            let featuras = featurai[a];
+            featuras.classList.add('dingo');
+          } else {
+            let featuras = featurai[a];
+            featuras.classList.remove('dingo');
+          }
+        }
+      } else if (aktyvus.innerHTML.includes('RASTER')) {
+        const featurai = document.getElementsByClassName('vienas-vienetas');
+        for (let a = 0; a < featurai.length; a++) {
+          if (featurai[a].children[2].innerText !== 'raster') {
           let featuras = featurai[a];
           featuras.classList.add('dingo');
-          // } else {
-          //   featuras.classList.remove('dingo')
+          } else {
+            let featuras = featurai[a];
+            featuras.classList.remove('dingo');
           }
+        }
+      } else if (aktyvus.innerHTML.includes('UI/UX')) {
+        const featurai = document.getElementsByClassName('vienas-vienetas');
+        for (let a = 0; a < featurai.length; a++) {
+          if (featurai[a].children[2].innerText !== 'Agency') {
+          let featuras = featurai[a];
+          featuras.classList.add('dingo');
+          } else {
+            let featuras = featurai[a];
+            featuras.classList.remove('dingo');
+          }
+        }
+      } else if (aktyvus.innerHTML.includes('PRINTING')) {
+        const featurai = document.getElementsByClassName('vienas-vienetas');
+        for (let a = 0; a < featurai.length; a++) {
+          if (featurai[a].children[2].innerText !== 'Portal') {
+          let featuras = featurai[a];
+          featuras.classList.add('dingo');
+          } else {
+            let featuras = featurai[a];
+            featuras.classList.remove('dingo');
+          }
+        }
+      } else {
+        const featurai = document.getElementsByClassName('vienas-vienetas');
+        for (let a = 0; a < featurai.length; a++) {
+          let featuras = featurai[a];
+          featuras.classList.remove('dingo');
         }
       }
     });
