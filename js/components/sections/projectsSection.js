@@ -19,72 +19,72 @@ const projectsSection = (selector) => {
       </div>
       <div class="row">
         <div class="col-12 col-md-6 ml-md-3 col-xl-4 ml-xl-4">
-          <a class="sub-header aa aktyvi" href="#projects">ALL</a>
-          <a class="sub-header aa" href="#projects">VECTOR</a>
-          <a class="sub-header aa" href="#projects">RASTER</a>
-          <a class="sub-header aa" href="#projects">UI/UX</a>
-          <a class="sub-header aa" href="#projects">PRINTING</a>
+          <a class="sub-header filter active-filter" href="#projects">ALL</a>
+          <a class="sub-header filter" href="#projects">VECTOR</a>
+          <a class="sub-header filter" href="#projects">RASTER</a>
+          <a class="sub-header filter" href="#projects">UI/UX</a>
+          <a class="sub-header filter" href="#projects">PRINTING</a>
         </div>
       </div>
       <div id="featuredProjects_block" class="row">${featuredProjectsList('#featuredProjects_block', featuredProjectsData, imgPath)}</div> `
 
-    const elementsList =  document.getElementsByClassName("aa");
+    const elementsList =  document.getElementsByClassName("filter");
     for (let i = 0; i < elementsList.length; i++) {
     elementsList[i].addEventListener("click", function() {
-      const dabartinis = document.getElementsByClassName("aktyvi");
-      dabartinis[0].className = dabartinis[0].className.replace("aktyvi", "")
-      this.className += " aktyvi";
+      const dabartinis = document.getElementsByClassName("active-filter");
+      dabartinis[0].className = dabartinis[0].className.replace("active-filter", "")
+      this.className += " active-filter";
 
-    const aktyvus = document.querySelector(".aktyvi");
+    const aktyvus = document.querySelector(".active-filter");
       if (aktyvus.innerHTML.includes('VECTOR')) {
-        const featurai = document.getElementsByClassName('vienas-vienetas');
+        const featurai = document.getElementsByClassName('filter-card');
         for (let a = 0; a < featurai.length; a++) {
           if (featurai[a].children[2].innerText !== 'vector') {
             let featuras = featurai[a];
-            featuras.classList.add('dingo');
+            featuras.classList.add('no-display');
           } else {
             let featuras = featurai[a];
-            featuras.classList.remove('dingo');
+            featuras.classList.remove('no-display');
           }
         }
       } else if (aktyvus.innerHTML.includes('RASTER')) {
-        const featurai = document.getElementsByClassName('vienas-vienetas');
+        const featurai = document.getElementsByClassName('filter-card');
         for (let a = 0; a < featurai.length; a++) {
           if (featurai[a].children[2].innerText !== 'raster') {
           let featuras = featurai[a];
-          featuras.classList.add('dingo');
+          featuras.classList.add('no-display');
           } else {
             let featuras = featurai[a];
-            featuras.classList.remove('dingo');
+            featuras.classList.remove('no-display');
           }
         }
       } else if (aktyvus.innerHTML.includes('UI/UX')) {
-        const featurai = document.getElementsByClassName('vienas-vienetas');
+        const featurai = document.getElementsByClassName('filter-card');
         for (let a = 0; a < featurai.length; a++) {
           if (featurai[a].children[2].innerText !== 'Agency') {
           let featuras = featurai[a];
-          featuras.classList.add('dingo');
+          featuras.classList.add('no-display');
           } else {
             let featuras = featurai[a];
-            featuras.classList.remove('dingo');
+            featuras.classList.remove('no-display');
           }
         }
       } else if (aktyvus.innerHTML.includes('PRINTING')) {
-        const featurai = document.getElementsByClassName('vienas-vienetas');
+        const featurai = document.getElementsByClassName('filter-card');
         for (let a = 0; a < featurai.length; a++) {
           if (featurai[a].children[2].innerText !== 'Portal') {
           let featuras = featurai[a];
-          featuras.classList.add('dingo');
+          featuras.classList.add('no-display');
           } else {
             let featuras = featurai[a];
-            featuras.classList.remove('dingo');
+            featuras.classList.remove('no-display');
           }
         }
       } else {
-        const featurai = document.getElementsByClassName('vienas-vienetas');
+        const featurai = document.getElementsByClassName('filter-card');
         for (let a = 0; a < featurai.length; a++) {
           let featuras = featurai[a];
-          featuras.classList.remove('dingo');
+          featuras.classList.remove('no-display');
         }
       }
     });
