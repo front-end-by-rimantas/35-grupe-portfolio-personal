@@ -37,49 +37,13 @@ const projectsSection = (selector) => {
 
     const aktyvus = document.querySelector(".active-filter");
       if (aktyvus.innerHTML.includes('VECTOR')) {
-        const featurai = document.getElementsByClassName('filter-card');
-        for (let a = 0; a < featurai.length; a++) {
-          if (featurai[a].children[2].innerText !== 'vector') {
-            let featuras = featurai[a];
-            featuras.classList.add('no-display');
-          } else {
-            let featuras = featurai[a];
-            featuras.classList.remove('no-display');
-          }
-        }
+        projectsFilter('vector');
       } else if (aktyvus.innerHTML.includes('RASTER')) {
-        const featurai = document.getElementsByClassName('filter-card');
-        for (let a = 0; a < featurai.length; a++) {
-          if (featurai[a].children[2].innerText !== 'raster') {
-          let featuras = featurai[a];
-          featuras.classList.add('no-display');
-          } else {
-            let featuras = featurai[a];
-            featuras.classList.remove('no-display');
-          }
-        }
+        projectsFilter('raster');
       } else if (aktyvus.innerHTML.includes('UI/UX')) {
-        const featurai = document.getElementsByClassName('filter-card');
-        for (let a = 0; a < featurai.length; a++) {
-          if (featurai[a].children[2].innerText !== 'Agency') {
-          let featuras = featurai[a];
-          featuras.classList.add('no-display');
-          } else {
-            let featuras = featurai[a];
-            featuras.classList.remove('no-display');
-          }
-        }
+        projectsFilter('Agency');
       } else if (aktyvus.innerHTML.includes('PRINTING')) {
-        const featurai = document.getElementsByClassName('filter-card');
-        for (let a = 0; a < featurai.length; a++) {
-          if (featurai[a].children[2].innerText !== 'Portal') {
-          let featuras = featurai[a];
-          featuras.classList.add('no-display');
-          } else {
-            let featuras = featurai[a];
-            featuras.classList.remove('no-display');
-          }
-        }
+        projectsFilter('Portal');
       } else {
         const featurai = document.getElementsByClassName('filter-card');
         for (let a = 0; a < featurai.length; a++) {
@@ -87,6 +51,18 @@ const projectsSection = (selector) => {
           featuras.classList.remove('no-display');
         }
       }
+      function projectsFilter(card) {
+        const featurai = document.getElementsByClassName('filter-card');
+        for (let a = 0; a < featurai.length; a++) {
+          if (featurai[a].children[2].innerText !== card) {
+            let featuras = featurai[a];
+            featuras.classList.add('no-display');
+          } else {
+            let featuras = featurai[a];
+            featuras.classList.remove('no-display');
+        }
+      }
+    }
     });
   }
 }
