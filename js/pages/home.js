@@ -37,15 +37,21 @@ addEventListener('scroll', function () {
 });
 
 const burger = document.getElementById('burger');
-
 burger.addEventListener('click', function () {
   const headerNav = document.querySelector('.header-nav');
+  const burgerIcon = document.querySelector('.fa-bars');
+  const crossIcon = document.querySelector('.fa-xmark')
+
   if (!headerNav.classList.contains('mobile-nav')) {
     headerNav.classList.add('mobile-nav');
     mainHeaderDOM.classList.add('testing');
+    burgerIcon.classList.add('hidden')
+    crossIcon.classList.remove('hidden')
   } else {
     headerNav.classList.remove('mobile-nav');
     mainHeaderDOM.classList.remove('testing');
+    burgerIcon.classList.remove('hidden')
+    crossIcon.classList.add('hidden')
   }
 });
 /* enf of HEADER */

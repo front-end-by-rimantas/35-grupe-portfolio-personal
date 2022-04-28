@@ -42,7 +42,7 @@ a.active {
 nav {
   position: relative;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 .header-nav {
   position: absolute;
   display: flex;
@@ -73,10 +73,9 @@ header::before {
     z-index: -1;
   }
   header.testing::before  {
-    /* position: absolute; */
      width: 100vw;
   }
 #burger {
   z-index: 2;
-}
+  }
 } 
