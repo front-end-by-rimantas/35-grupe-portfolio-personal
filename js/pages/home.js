@@ -35,6 +35,16 @@ addEventListener('scroll', function () {
     mainHeaderDOM.classList.remove('shadow');
   }
 });
+
+const burger = document.getElementById('burger');
+burger.addEventListener('click', function () {
+  const headerNav = document.querySelector('.header-nav');
+  if (!headerNav.classList.contains('mobile-nav')) {
+    headerNav.classList.add('mobile-nav'); 
+  } else {
+    headerNav.classList.remove('mobile-nav');
+  }
+});
 /* enf of HEADER */
 
 /* Hero (hero section) */
