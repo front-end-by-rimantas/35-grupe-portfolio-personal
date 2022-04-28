@@ -18,10 +18,10 @@ const headerSection = (selector) => {
             <a href="#">Pages</a>
             <a ${document.URL.includes('contact') ? 'class="active"' : ''}href="${document.URL.includes('contact') ? './' : `${imgPath}./pages/contact/`}">Contact</a>
           </nav>
-          <a href="#" class="hidden-lg icon" id="burger">
+          <div class="hidden-lg icon" id="burger">
             <i class="fa-solid fa-bars menu-icon"></i>
             <i class="fa-solid fa-xmark menu-icon hidden"></i>
-          </a>
+          </div>
         </div>
       </div>`
 

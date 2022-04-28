@@ -77,5 +77,6 @@ header::before {
   }
 #burger {
   z-index: 2;
+  cursor: pointer;
   }
 } 

@@ -26,15 +26,16 @@ import { postsSection } from '../components/sections/postsSection.js';
 /* HEADER */
 headerSection('#header');
 const mainHeaderDOM = document.querySelector('.main-header');
-
-addEventListener('scroll', function () {
+function scrollFunction() {
   const headerPosition = 150;
   if (scrollY > headerPosition) {
     mainHeaderDOM.classList.add('shadow');
   } else {
     mainHeaderDOM.classList.remove('shadow');
   }
-});
+}
+addEventListener('scroll', scrollFunction);
+scrollFunction();
 
 const burger = document.getElementById('burger');
 burger.addEventListener('click', function () {
