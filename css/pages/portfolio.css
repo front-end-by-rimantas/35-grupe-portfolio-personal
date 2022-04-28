@@ -9,22 +9,22 @@
 @import '../components/form.css';
 @import '../components/hover.css';
 @import '../components/heading.css';
+@import '../components/header.css';
+@import '../components/pageName.css';
+@import '../components/heading-hover.css';
+@import '../components/featuredProjects.css';
+@import '../components/footer.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* HEADER */
-@import '../components/header.css';
 /* enf of HEADER */
 
 /* Page name */
-@import '../components/pageName.css';
 /* Page name end */
 
 /* LatestFeaturedProjects */
-@import '../components/heading-hover.css';
-@import '../components/featuredProjects.css';
 /* end of LatestFeaturedProjects */
 
 /* FOOTER */
-@import '../components/footer.css';
 /* end of FOOTER */
