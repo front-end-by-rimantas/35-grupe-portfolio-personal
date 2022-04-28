@@ -33,12 +33,16 @@
 
 /* LatestFeaturedProjects */
 @import '../components/heading-hover.css';
+/* 
 .aktyvi {
     color: var(--primary-color);
 }
 .dingo {
     display: none;
-}
+} */
+
+@import '../components/featuredProjects.css';
+
 /* end of LatestFeaturedProjects */
 
 /* Testimonials */

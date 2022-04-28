@@ -14,10 +14,10 @@ import { headerSection } from '../components/sections/headerSection.js';
 import { aboutSection } from "../components/sections/aboutSection.js";
 // import { numbersCounterContainer } from '../components/sections/numberCounterSection.js';
 import { testimonialsSection } from '../components/sections/testimonialsSection.js'
-// import { sponsorsSection } from '../components/sections/sponsorsSection.js'
-// import { footerSection } from '../components/sections/footerSection.js';
+import { sponsorsSection } from '../components/sections/sponsorsSection.js'
+import { footerSection } from '../components/sections/footerSection.js';
 import { projectsSection } from '../components/sections/projectsSection.js'
-// import { plansSection } from '../components/sections/plansSection.js'
+import { plansSection } from '../components/sections/plansSection.js'
 import { servicesSection } from '../components/sections/serviceSection.js';
 import { postsSection } from '../components/sections/postsSection.js';
 
@@ -62,8 +62,7 @@ testimonialsSection('#testimonials');
 /* end of Testimonials */
 
 /* Plans */
-// plansSection('#plans');
-renderPlans('#plans_block', plansData);
+plansSection('#plans');
 /* end of Plans */
 
 /* LatestPost */
@@ -71,9 +70,9 @@ postsSection('#posts');
 /* end of LatestPost */
 
 /* Sponsors */
-// sponsorsSection('#sponsors');
+sponsorsSection('#sponsors');
 /* end of Sponsors */
 
 /* FOOTER */
-// footerSection('#footer');
+footerSection('#footer');
 /* end of FOOTER */

@@ -10,8 +10,8 @@ const projectsSection = (selector) => {
 
   DOM.innerHTML = `
   <div class="row">
-        <div class="col-12 col-md-8 ml-md-2 col-xl-6 ml-xl-3">
-          <h2 class="section-title center">Our Latest Featured Projects</h2>
+        <div class="col-12 col-md-10 ml-md-1 col-xl-6 ml-xl-3">
+          <h2 class="section-title center line">Our Latest Featured Projects</h2>
           <p class="section-description center">
             Who are in extremely love with eco friendly system.
           </p>
