@@ -12,7 +12,7 @@ const testimonialsSection = (selector) => {
             it. Ask any chain smoker or even a person.
           </p>
         </div>
-        <div class="col-12">${testimonialsList(
+        <div class="col-12 testimonials-slider-content">${testimonialsList(
           '#testimonials_block',
           testimonialsData
         )}</div>

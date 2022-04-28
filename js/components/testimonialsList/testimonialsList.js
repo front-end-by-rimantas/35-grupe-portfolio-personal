@@ -3,7 +3,6 @@ function testimonialsList(selector, data) {
   let html = '';
   for (const item of data) {
     html += `<div class="col-12 testimonials-slider-content">
-    <div class="testimonials-items">
       <div class="testimonials-card">
         <div class="testimonials-content">
           <img
@@ -22,7 +21,6 @@ function testimonialsList(selector, data) {
     <div class="testimonials-actions">
       <span class="lnr lnr-arrow-up carousel-btn"></span>
       <span class="lnr lnr-arrow-down carousel-btn"></span>
-    </div>
     </div>`;
   }
   if (DOM) {
