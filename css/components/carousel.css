@@ -1,0 +1,36 @@
+:root {
+  --width: 80%;
+  --moveImages: 2;
+}
+
+.carousel {
+  display: grid;
+}
+
+.carousel > .list-view {
+  margin-left: calc((100% - var(--width)) / 2);
+  width: var(--width);
+  overflow: hidden;
+  border: 3px solid red;
+}
+
+.carousel > .list-view > .list {
+  display: flex;
+  width: calc(9 / 5 * 100%);
+  transform: translateX(
+    calc(-1 * var(--width) / 9 * var(--moveImages) - var(--moveImages) * 3%)
+  );
+  transition: all 2s;
+  /* gap: 6%; */
+}
+
+.carousel .list > .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc((100% - 9 * 6%) / 9);
+  height: auto;
+  /* border: 10px solid red; */
+  font-size: 50px;
+  margin: 0px 3%;
+}

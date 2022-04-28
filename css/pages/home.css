@@ -9,6 +9,7 @@
 @import '../components/form.css';
 @import '../components/hover.css';
 @import '../components/heading.css';
+@import '../components/carousel.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
@@ -47,6 +48,7 @@
 /* end of LatestPost */
 
 /* Sponsors */
+@import '../components/sponsors.css';
 /* end of Sponsors */
 
 /* FOOTER */
