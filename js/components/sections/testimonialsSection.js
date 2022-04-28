@@ -1,3 +1,6 @@
+import { testimonialsList } from '../../components/testimonialsList/testimonialsList.js';
+import { testimonialsData } from '../../data/testimonialsData.js';
+
 const testimonialsSection = (selector) => {
   const DOM = document.querySelector(selector);
   DOM.innerHTML = `
@@ -9,7 +12,10 @@ const testimonialsSection = (selector) => {
             it. Ask any chain smoker or even a person.
           </p>
         </div>
-        <div class="col-12"></div>
+        <div class="col-12">${testimonialsList(
+          '#testimonials_block',
+          testimonialsData
+        )}</div>
       </div>`;
 };
 export { testimonialsSection };
