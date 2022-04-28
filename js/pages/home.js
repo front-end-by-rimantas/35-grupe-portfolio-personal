@@ -37,12 +37,15 @@ addEventListener('scroll', function () {
 });
 
 const burger = document.getElementById('burger');
+
 burger.addEventListener('click', function () {
   const headerNav = document.querySelector('.header-nav');
   if (!headerNav.classList.contains('mobile-nav')) {
-    headerNav.classList.add('mobile-nav'); 
+    headerNav.classList.add('mobile-nav');
+    mainHeaderDOM.classList.add('testing');
   } else {
     headerNav.classList.remove('mobile-nav');
+    mainHeaderDOM.classList.remove('testing');
   }
 });
 /* enf of HEADER */
