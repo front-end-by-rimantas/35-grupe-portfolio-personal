@@ -110,13 +110,13 @@
 .dot::before {
   content: '';
   position: absolute;
-  top: 75px;
+  top: 85px;
   background-color: var(--primary-color);
   border: 5px solid #eee;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  z-index: 2;
+  z-index: 1;
 }
 .dot {
   position: relative;
@@ -128,7 +128,7 @@
   width: 2px;
   height: 950px;
   left: 9px;
-  z-index: 1;
+  top: 35px;
 }
 
 @media (min-width: 700px) {
