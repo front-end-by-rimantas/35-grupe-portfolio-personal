@@ -3,6 +3,10 @@ import { testimonialsData } from '../../data/testimonialsData.js';
 
 const testimonialsSection = (selector) => {
   const DOM = document.querySelector(selector);
+  let imgPath = '';
+  if (document.URL.includes('pages')) {
+    imgPath = '../.';
+  }
   DOM.innerHTML = `
       <div class="row">
         <div class="col-12 col-md-10 col-lg-8 ml-md-1 ml-lg-2 center">
@@ -14,7 +18,8 @@ const testimonialsSection = (selector) => {
         </div>
         <div class="col-12 testimonials-slider-content">${testimonialsList(
           '#testimonials_block',
-          testimonialsData
+          testimonialsData,
+          imgPath
         )}</div>
       </div>`;
 };

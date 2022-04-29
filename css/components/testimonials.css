@@ -1,11 +1,11 @@
 .testimonials-slider-content {
-  display: grid;
-  /* grid-template-columns: 1fr 1fr; */
+  display: flex;
 }
 
 .testimonials-card {
   display: flex;
-  width: 100%;
+  justify-content: space-between;
+  width: calc(100%);
   overflow: hidden;
   background-color: var(--secondary-color);
 }
@@ -33,8 +33,11 @@
 .testimonials-actions {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+  order: 3;
 }
 .carousel-btn {
+  display: flex;
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 14px;

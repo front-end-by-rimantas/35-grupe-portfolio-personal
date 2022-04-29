@@ -1,12 +1,15 @@
-function testimonialsList(selector, data) {
+function testimonialsList(selector, data, imgPath) {
   const DOM = document.querySelector(selector);
-  let html = '';
+  let html = `<div class="testimonials-actions">
+  <span class="lnr lnr-arrow-up carousel-btn"></span>
+  <span class="lnr lnr-arrow-down carousel-btn"></span>
+</div>`;
   for (const item of data) {
     html += `<div class="col-12 testimonials-slider-content">
       <div class="testimonials-card">
         <div class="testimonials-content">
           <img
-            src="./img/blog-${item.picture}-img.webp"
+            src="${imgPath}./img/blog-${item.picture}-img.webp"
             alt="author"
             class="testimonials-img"
           />
@@ -18,10 +21,7 @@ function testimonialsList(selector, data) {
         </div>
       </div>
     </div>
-    <div class="testimonials-actions">
-      <span class="lnr lnr-arrow-up carousel-btn"></span>
-      <span class="lnr lnr-arrow-down carousel-btn"></span>
-    </div>`;
+    `;
   }
   if (DOM) {
     DOM.innerHTML = html;

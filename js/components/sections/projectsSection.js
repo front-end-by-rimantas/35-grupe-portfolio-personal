@@ -1,7 +1,7 @@
 import { featuredProjectsList } from '../../components/featuredProjectsList.js/featuredProjectsList.js';
 import { featuredProjectsData } from '../../data/featuredProjectsData.js';
 const projectsSection = (selector) => {
-  const DOM = document.querySelector(selector)
+  const DOM = document.querySelector(selector);
   let imgPath = '';
   if (document.URL.includes('pages')) {
     imgPath = '../.';
@@ -24,7 +24,11 @@ const projectsSection = (selector) => {
           <a class="sub-header" href="#">PRINTING</a>
         </div>
       </div>
-      <div id="featuredProjects_block" class="row">${featuredProjectsList('#featuredProjects_block', featuredProjectsData, imgPath)}</div> `
-}
+      <div id="featuredProjects_block" class="row">${featuredProjectsList(
+        '#featuredProjects_block',
+        featuredProjectsData,
+        imgPath
+      )}</div> `;
+};
 
-export { projectsSection }
+export { projectsSection };
