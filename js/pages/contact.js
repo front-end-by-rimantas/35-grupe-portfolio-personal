@@ -1,6 +1,6 @@
 // component imports
-import { headerSection } from '../components/sections/headerSection.js'
-import { footerSection } from '../components/sections/footerSection.js'
+import { headerSection } from '../components/sections/headerSection.js';
+import { footerSection } from '../components/sections/footerSection.js';
 import { pageNameSection } from '../components/sections/pageNameSection.js';
 // components execution
 
