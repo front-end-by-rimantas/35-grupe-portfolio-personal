@@ -8,7 +8,7 @@ const headerSection = (selector) => {
   DOM.innerHTML = `
     <div class="row nav">
       <div class="col-12">
-        <img src="${imgPath}./img/headerLogo.webp" alt="Logo image"/>
+        <a href="#"><img src="${imgPath}./img/headerLogo.webp" alt="Logo image"/></a>
         <nav class="header-nav visible-lg menu">
           <a ${document.URL.includes('pages') ? '' : 'class="active"'} href="${imgPath}./">Home</a>
           <a ${document.URL.includes('about') ? 'class="active"' : ''}href="${document.URL.includes('about') ? './' : `${imgPath}./pages/about/`}">About</a>

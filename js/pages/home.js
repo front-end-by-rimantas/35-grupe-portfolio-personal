@@ -25,36 +25,6 @@ import { postsSection } from '../components/sections/postsSection.js';
 
 /* HEADER */
 headerSection('#header');
-// const mainHeaderDOM = document.querySelector('.main-header');
-// function scrollFunction() {
-//   const headerPosition = 150;
-//   if (scrollY > headerPosition) {
-//     mainHeaderDOM.classList.add('shadow');
-//   } else {
-//     mainHeaderDOM.classList.remove('shadow');
-//   }
-// }
-// addEventListener('scroll', scrollFunction);
-// scrollFunction();
-
-// const burger = document.getElementById('burger');
-// burger.addEventListener('click', function () {
-//   const headerNav = document.querySelector('.header-nav');
-//   const burgerIcon = document.querySelector('.fa-bars');
-//   const crossIcon = document.querySelector('.fa-xmark')
-
-//   if (!headerNav.classList.contains('mobile-nav')) {
-//     headerNav.classList.add('mobile-nav');
-//     mainHeaderDOM.classList.add('testing');
-//     burgerIcon.classList.add('hidden')
-//     crossIcon.classList.remove('hidden')
-//   } else {
-//     headerNav.classList.remove('mobile-nav');
-//     mainHeaderDOM.classList.remove('testing');
-//     burgerIcon.classList.remove('hidden')
-//     crossIcon.classList.add('hidden')
-//   }
-// });
 /* enf of HEADER */
 
 /* Hero (hero section) */
