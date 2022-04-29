@@ -9,47 +9,47 @@
 @import '../components/form.css';
 @import '../components/hover.css';
 @import '../components/heading.css';
+@import '../components/header.css';
+@import '../components/hero.css';
+@import '../components/aboutMe.css';
+@import '../components/services.css';
+@import '../components/heading-hover.css';
+@import '../components/featuredProjects.css';
+@import '../components/plan.css';
+@import '../components/blog.css';
+@import '../components/footer.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* HEADER */
-@import '../components/header.css';
 /* end of HEADER */
 
 /* Hero (hero section) */
-@import '../components/hero.css';
 /* end of Hero (hero section) */
 
 /* AboutMe */
-@import '../components/aboutMe.css';
 /* end of AboutMe */
 
 /* OfferedService */
-@import '../components/services.css';
 /* end of OfferedService */
 
 /* NumbersCounter */
 /* end of NumbersCounter */
 
 /* LatestFeaturedProjects */
-@import '../components/heading-hover.css';
-@import '../components/featuredProjects.css';
 /* end of LatestFeaturedProjects */
 
 /* Testimonials */
 /* end of Testimonials */
 
 /* Plans */
-@import '../components/plan.css';
 /* end of Plans */
 
 /* LatestPost */
-@import '../components/blog.css';
 /* end of LatestPost */
 
 /* Sponsors */
 /* end of Sponsors */
 
 /* FOOTER */
-@import '../components/footer.css';
 /* end of FOOTER */

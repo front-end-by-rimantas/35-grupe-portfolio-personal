@@ -8,19 +8,19 @@
 @import '../components/button.css';
 @import '../components/form.css';
 @import '../components/heading.css';
+@import '../components/header.css';
+@import '../components/pageName.css';
+@import '../components/footer.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* HEADER */
-@import '../components/header.css';
 /* end of HEADER */
 
 /* Name of page */
-@import '../components/pageName.css';
 /* Name of page end */
 
 /* Map */
-
 /* end of Map */
 
 /* Contact */
@@ -66,5 +66,4 @@
 /* end of Contact */
 
 /* FOOTER */
-@import '../components/footer.css';
 /* end of FOOTER */
