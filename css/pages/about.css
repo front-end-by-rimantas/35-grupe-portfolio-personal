@@ -10,19 +10,20 @@
 @import '../components/hover.css';
 @import '../components/heading.css';
 @import '../components/testimonials.css';
+@import '../components/header.css';
+@import '../components/pageName.css';
+@import '../components/aboutMe.css';
+@import '../components/footer.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* HEADER */
-@import '../components/header.css';
 /* enf of HEADER */
 
 /* Name of page */
-@import '../components/pageName.css';
 /* end of Name of page end */
 
 /* AboutMe */
-@import '../components/aboutMe.css';
 /* end of AboutMe */
 
 /* Description  */
