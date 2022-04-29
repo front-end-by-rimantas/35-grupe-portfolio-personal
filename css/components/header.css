@@ -71,7 +71,7 @@ header::before {
     background-color: black;
     z-index: -1;
   }
-  header.testing::before  {
+  header.layer::before  {
      width: 100vw;
   }
 #burger {

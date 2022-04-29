@@ -44,12 +44,12 @@ const headerSection = (selector) => {
     const crossIcon = document.querySelector('.fa-xmark');
     if (!headerNav.classList.contains('mobile-nav')) {
       headerNav.classList.add('mobile-nav');
-      DOM.classList.add('testing');
+      DOM.classList.add('layer');
       burgerIcon.classList.add('hidden')
       crossIcon.classList.remove('hidden')
     } else {
       headerNav.classList.remove('mobile-nav');
-      DOM.classList.remove('testing');
+      DOM.classList.remove('layer');
       burgerIcon.classList.remove('hidden')
       crossIcon.classList.add('hidden')
     }
