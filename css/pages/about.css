@@ -71,35 +71,79 @@
 /* My Qualifications  */
 .qualifications-container {
   display: flex;
-  max-width: 500px;
   flex-direction: column;
 }
 .qualifications-row {
   display: flex;
-  margin-bottom: 10px;
-  align-items: center;
+  gap: 85px;
+  margin: 0 0 10px 10px;
+  text-align: center;
+  position: relative;
 }
 .qualification {
-  padding: 25px;
+  padding: 30px;
+  margin: 12px -40px;
+  width: 600px;
   text-align: center;
+  background-color: var(--secondary-color);
+  box-shadow: 3px 10px 30px 3px #eee;
 }
+.qualification p {
+  font-size: 14px;
+  color: #777;
+}
+.qualification span {
+  color: #222;
+}
+.qualification img {
+  width: 70px;
+  height: 40px;
+  filter: invert(60%);
+  margin-bottom: 30px;
+}
+.section-smaller {
+  margin-bottom: 5px;
+}
+.dot::before {
+  content: '';
+  position: absolute;
+  top: 75px;
+  background-color: var(--primary-color);
+  border: 5px solid #eee;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  z-index: 2;
+}
+.dot {
+  position: relative;
+}
+.line {
+  position: absolute;
+  background-color: #eee;
+  width: 2px;
+  height: 950px;
+  left: 9px;
+  z-index: 1;
+}
+
 @media (min-width: 700px) {
   .qualification {
     width: calc(50% - 5px);
+    justify-content: space-between;
   }
   .qualifications-container {
     margin: 10px auto;
-    width: 80%;
+    width: 100%;
     max-width: 900px;
     min-width: 700px;
   }
   .qualifications-row {
     justify-content: flex-end;
-  }
+    }
   .qualifications-row:nth-child(even) {
     flex-direction: row-reverse;
   }
-}
 /* My Qualifications end  */
 
 /* Testimonials  */
