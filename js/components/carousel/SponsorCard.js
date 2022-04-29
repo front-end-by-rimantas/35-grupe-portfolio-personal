@@ -6,8 +6,14 @@ class SponsorCard {
   }
 
   render() {
+    let imgPath = '';
+    if (document.URL.includes('pages')) {
+      imgPath = '../.';
+    }
     const width = 100 / this.elementCount;
-    return `<img src='${this.imgPath}' alt='${this.imgAlt}' class="sponsorCard" style="width:${width}%">`;
+    return `<img src='${imgPath + this.imgPath}' alt='${
+      imgPath + this.imgAlt
+    }' class="sponsorCard" style="width:${width}%">`;
   }
 }
 
