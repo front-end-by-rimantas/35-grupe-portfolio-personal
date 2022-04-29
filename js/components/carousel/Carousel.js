@@ -1,18 +1,21 @@
-import { sponsorsData } from '../../data/sponsorsData.js';
 import { SponsorCard } from './SponsorCard.js';
 class Carousel {
-  constructor(cardClass, data, settings) {
+  constructor(data, cardClass, section, settings) {
     this.cardClass = cardClass;
     this.data = data;
     this.settings = settings;
-    this.size = { mobile: 1, tablet: 2, minDesktop: 3, maxDesktop: 5 };
+    this.size = { mobile: 1, tablet: 2, desktop: 5 };
     this.previousNext = false;
+    this.listLength = 0;
+    this.fullListHTML = '';
+    this.section = section;
 
     this.init();
   }
 
   init() {
     this.updateDefaultSetting();
+    this.listHTML();
   }
 
   isObject(obj) {
@@ -60,29 +63,34 @@ class Carousel {
     }
   }
 
-  getListElement(index) {
-    return new SponsorCard(
-      sponsorsData.imgPath + sponsorsData.list[index].src,
-      sponsorsData.imgPath + sponsorsData.list[index].alt
-    ).render();
-  }
-
   listHTML() {
     let html = '';
-    html += this.getListElement(sponsorsData.list.length - 2);
-    html += this.getListElement(sponsorsData.list.length - 1);
-    for (let i = 0; i < sponsorsData.list.length; i++) {
-      html += this.getListElement(i);
-    }
-    html += this.getListElement(0);
-    html += this.getListElement(1);
-    return html;
-  }
 
-  getHTML() {
-    let html = this.listHTML();
-    console.log(html);
-    return html;
+    let maxImgInPage = 0;
+    for (const key in this.size) {
+      if (maxImgInPage < this.size[key]) {
+        maxImgInPage = this.size[key];
+      }
+    }
+
+    const list = [
+      ...this.data.list.slice(-maxImgInPage),
+      ...this.data.list,
+      ...this.data.list.slice(0, maxImgInPage),
+    ];
+    this.listLength = list.length;
+    for (let i = 0; i < list.length; i++) {
+      if (this.section === 'sponsor') {
+        html += new SponsorCard(
+          this.data.imgPath + list[i].src,
+          this.data.imgPath + list[i].alt,
+          list.length
+        ).render();
+      } else {
+        console.log('Need to choose section card');
+      }
+    }
+    this.fullListHTML = html;
   }
 }
 
