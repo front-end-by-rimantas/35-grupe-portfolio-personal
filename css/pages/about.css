@@ -76,9 +76,8 @@
 .qualifications-row {
   display: flex;
   gap: 85px;
-  margin: 0 0 10px 10px;
+  margin: 0 60px 20px 0;
   text-align: center;
-  position: relative;
 }
 .qualification {
   padding: 30px;
@@ -118,7 +117,8 @@
 .dot {
   position: relative;
 }
-.line {
+.line::before {
+  content: '';
   position: absolute;
   background-color: #eee;
   width: 2px;
