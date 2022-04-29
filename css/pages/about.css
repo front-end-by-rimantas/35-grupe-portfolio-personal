@@ -11,6 +11,9 @@
 @import '../components/heading.css';
 @import '../components/carousel.css';
 
+/* sections */
+@import '../components/sponsors.css';
+
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* HEADER */

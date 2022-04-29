@@ -16,9 +16,6 @@
 .carousel > .list-view > .list {
   display: flex;
 }
-.carousel > .list-view > .list:hover {
-  display: flex;
-}
 
 .carousel .list > .sponsorCard {
   display: flex;
