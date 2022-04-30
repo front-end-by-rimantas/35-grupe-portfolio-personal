@@ -6,7 +6,7 @@ const testimonialsData = [
     job: 'CEO at Google',
   },
   {
-    picture: 'author2',
+    picture: 'author',
     text: 'A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.',
     feedbackProvider: 'Carolyn Craig',
     job: 'CEO at Facebook',

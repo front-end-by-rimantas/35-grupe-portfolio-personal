@@ -1,12 +1,12 @@
 .testimonials-slider-content {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .testimonials-card {
-  display: flex;
-  justify-content: space-between;
-  width: calc(100%);
   overflow: hidden;
+  margin: 20px;
   background-color: var(--secondary-color);
 }
 
@@ -19,27 +19,27 @@
 
 .testimonials-content:hover .section-smaller {
   color: var(--primary-color);
-  cursor: pointer;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .testimonials-content .section-smaller {
   color: var(--fourth-color);
 }
-.testimonials-img {
+
+.testimonials-content .testimonials-img {
   border-radius: 50%;
 }
 
 .testimonials-actions {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  order: 3;
+  position: relative;
+  transform: translateY(50%);
+  order: 2;
 }
 .carousel-btn {
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  position: absolute;
+  /* top: 50%; */
+  /* right: -45px; */
   padding: 14px;
   background-color: var(--secondary-color);
   box-shadow: -10px 10px 30px 0px rgb(203, 202, 202);
