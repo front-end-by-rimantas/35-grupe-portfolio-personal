@@ -45,15 +45,23 @@ const headerSection = (selector) => {
     if (!headerNav.classList.contains('mobile-nav')) {
       headerNav.classList.add('mobile-nav');
       DOM.classList.add('layer');
-      burgerIcon.classList.add('hidden')
-      crossIcon.classList.remove('hidden')
+      burgerIcon.classList.add('hidden');
+      crossIcon.classList.remove('hidden');
     } else {
       headerNav.classList.remove('mobile-nav');
       DOM.classList.remove('layer');
-      burgerIcon.classList.remove('hidden')
-      crossIcon.classList.add('hidden')
+      burgerIcon.classList.remove('hidden');
+      crossIcon.classList.add('hidden');
     }
-  });
+    document.onclick = function (e) {
+      if (e.target.id === 'header') {
+        headerNav.classList.remove('mobile-nav');
+        DOM.classList.remove('layer');
+        burgerIcon.classList.remove('hidden');
+        crossIcon.classList.add('hidden');
+      }
+    }
+  })
 }
 
 export { headerSection }

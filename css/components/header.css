@@ -42,11 +42,10 @@ a.active {
 nav {
   position: relative;
 }
-@media (max-width: 991px) {
+@media (max-width: 990px) {
 .header-nav {
   position: absolute;
   display: flex;
-  /* display: none; */
   flex-direction: column;
   background-color: black;
   opacity: 0.9;
