@@ -10,3 +10,7 @@
 .no-display {
     display: none;
 }
+.animation {
+    transition: all 0.5s;
+    transform: scale(0%);
+}
