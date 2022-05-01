@@ -5,7 +5,10 @@ import servicesData from '../data/servicesData.js';
 import { renderPlans } from '../components/plansList/plansList.js';
 import { plansData } from '../data/plansData.js';
 
-import { heroSection } from '../components/sections/heroSection.js'
+import { numbersList } from '../components/numbersList/numbersList.js';
+import { numbers } from '../data/numbers.js';
+
+import { heroSection } from '../components/sections/heroSection.js';
 import { headerSection } from '../components/sections/headerSection.js';
 
 
@@ -13,6 +16,7 @@ import { headerSection } from '../components/sections/headerSection.js';
 // import { headerSection } from '../components/sections/headerSection.js';
 import { aboutSection } from "../components/sections/aboutSection.js";
 // import { numbersCounterContainer } from '../components/sections/numberCounterSection.js';
+
 import { testimonialsSection } from '../components/sections/testimonialsSection.js'
 import { sponsorsSection } from '../components/sections/sponsorsSection.js'
 import { footerSection } from '../components/sections/footerSection.js';
@@ -40,6 +44,8 @@ servicesSection('#services');
 /* end of OfferedService */
 
 /* NumbersCounter */
+numbersList('#numberCounter', numbers);
+
 // numbersCounterContainer('#numberCounter');
 /* end of NumbersCounter */
 
