@@ -43,6 +43,7 @@
 .form textarea {
   resize: vertical;
   min-height: 190px;
+  max-height: 250px;
   font-family: 'Poppins', sans-serif;
 }
 .contact-btn {
