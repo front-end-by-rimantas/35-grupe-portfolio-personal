@@ -1,5 +1,5 @@
 const footerSection = (selector) => {
-  const DOM = document.querySelector(selector)
+  const DOM = document.querySelector(selector);
   DOM.innerHTML = `
   <div class="row">
         <div class="col-12 col-sm-6 col-lg-5">
@@ -18,7 +18,7 @@ const footerSection = (selector) => {
         <div class="col-12 col-sm-6 col-lg-5">
           <h4 class="section-smaller">Newsletter</h4>
           <p class="section-description">Stay updated with our latest trends</p>
-          <form class="col-12 col-md-6 ml-lg-1">
+          <form id="forma" class="col-12 col-md-6 ml-lg-1">
             <input
               class="email"
               type="email"
@@ -46,7 +46,12 @@ const footerSection = (selector) => {
             ><i class="fa-brands fa-behance"></i
           ></a>
         </div>
-      </div>`
-}
+      </div>`;
 
-export { footerSection }
+  document.addEventListener('submit', (e) => {
+    e.preventDefault();
+    formDOM.querySelector('input').value = '';
+  });
+};
+
+export { footerSection };
