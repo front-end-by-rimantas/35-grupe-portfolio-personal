@@ -5,6 +5,8 @@ import servicesData from '../data/servicesData.js';
 import { renderPlans } from '../components/plansList/plansList.js';
 import { plansData } from '../data/plansData.js';
 
+import { numbersList } from '../components/numbersList/numbersList.js';
+import { numbers } from '../data/numbers.js';
 import { heroSection } from '../components/sections/heroSection.js';
 import { headerSection } from '../components/sections/headerSection.js';
 
@@ -24,16 +26,6 @@ import { postsSection } from '../components/sections/postsSection.js';
 
 /* HEADER */
 headerSection('#header');
-const mainHeaderDOM = document.querySelector('.main-header');
-
-addEventListener('scroll', function () {
-  const headerPosition = 150;
-  if (scrollY > headerPosition) {
-    mainHeaderDOM.classList.add('shadow');
-  } else {
-    mainHeaderDOM.classList.remove('shadow');
-  }
-});
 /* enf of HEADER */
 
 /* Hero (hero section) */
@@ -49,6 +41,8 @@ servicesSection('#services');
 /* end of OfferedService */
 
 /* NumbersCounter */
+numbersList('#numberCounter', numbers);
+
 // numbersCounterContainer('#numberCounter');
 /* end of NumbersCounter */
 
