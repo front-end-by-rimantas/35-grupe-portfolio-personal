@@ -44,8 +44,7 @@
   font-family: 'Poppins', sans-serif;
 }
 .contact-btn {
-  margin-top: 20px;
-  align-self: flex-end;
+  margin: 20px 0 0 137px;
 }
 @media (max-width: 991px) {
   .form {
