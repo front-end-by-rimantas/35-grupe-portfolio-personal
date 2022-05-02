@@ -13,7 +13,7 @@ const pageNameSection = (selector) => {
     pageName = 'Contact Us';
   }
   DOM.innerHTML = `
-  <div class="row">
+  <div class="row background-spacing">
         <div class="flex-center">
           <h1 class="section-title page-name">${pageName}</h1>
           <div class="inline">
@@ -23,7 +23,7 @@ const pageNameSection = (selector) => {
           </div>
         </div>
       </div>
-  `
-}
+  `;
+};
 
-export { pageNameSection }
+export { pageNameSection };
