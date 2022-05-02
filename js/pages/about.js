@@ -29,7 +29,6 @@ aboutSection('#about');
 /* My Qualifications end  */
 
 /* Testimonials  */
-testimonialsSection('#testimonials');
 /* end of Testimonials  */
 
 /* Sponsors  */
