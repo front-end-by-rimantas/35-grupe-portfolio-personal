@@ -39,3 +39,42 @@ a.active {
   transition: 0.4s ease-in;
   box-shadow: 0 4px 40px lightgray;
 }
+nav {
+  position: relative;
+}
+@media (max-width: 990px) {
+.header-nav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  opacity: 0.9;
+  top: 0;
+  left: -260px;
+  height: 100vh;
+  width: 260px;
+  color: white;
+  padding: 20px 5px;
+  transition: 0.4s;
+}
+.mobile-nav {
+transform: translateX(260px);
+  }
+header::before {
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 0;
+    top: 0;
+    opacity: 0.5;
+    background-color: black;
+    z-index: -1;
+  }
+  header.layer::before  {
+     width: 100vw;
+  }
+#burger {
+  z-index: 2;
+  cursor: pointer;
+  }
+} 

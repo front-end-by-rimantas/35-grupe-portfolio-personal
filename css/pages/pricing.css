@@ -8,24 +8,24 @@
 @import '../components/button.css';
 @import '../components/form.css';
 @import '../components/heading.css';
+@import '../components/header.css';
+@import '../components/pageName.css';
+@import '../components/plan.css';
+@import '../components/footer.css';
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
 /* HEADER */
-@import '../components/header.css';
 /* enf of HEADER */
 
 /* Page name */
-@import '../components/pageName.css';
 /* Page name end */
 
 /* Plans */
-@import '../components/plan.css';
 /* end of Plans */
 
 /* Frequently Asked Questions  */
 /* Frequently Asked Questions end  */
 
 /* FOOTER */
-@import '../components/footer.css';
 /* end of FOOTER */
