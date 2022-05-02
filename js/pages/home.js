@@ -5,6 +5,9 @@ import servicesData from '../data/servicesData.js';
 import { renderPlans } from '../components/plansList/plansList.js';
 import { plansData } from '../data/plansData.js';
 
+import { numbersList } from '../components/numbersList/numbersList.js';
+import { numbers } from '../data/numbers.js';
+
 import { heroSection } from '../components/sections/heroSection.js';
 import { headerSection } from '../components/sections/headerSection.js';
 
@@ -12,11 +15,12 @@ import { headerSection } from '../components/sections/headerSection.js';
 // import { headerSection } from '../components/sections/headerSection.js';
 import { aboutSection } from '../components/sections/aboutSection.js';
 // import { numbersCounterContainer } from '../components/sections/numberCounterSection.js';
-import { testimonialsSection } from '../components/sections/testimonialsSection.js'
-import { sponsorsSection } from '../components/sections/sponsorsSection.js'
+
+import { testimonialsSection } from '../components/sections/testimonialsSection.js';
+import { sponsorsSection } from '../components/sections/sponsorsSection.js';
 import { footerSection } from '../components/sections/footerSection.js';
-import { projectsSection } from '../components/sections/projectsSection.js'
-import { plansSection } from '../components/sections/plansSection.js'
+import { projectsSection } from '../components/sections/projectsSection.js';
+import { plansSection } from '../components/sections/plansSection.js';
 import { servicesSection } from '../components/sections/serviceSection.js';
 import { postsSection } from '../components/sections/postsSection.js';
 
@@ -24,16 +28,6 @@ import { postsSection } from '../components/sections/postsSection.js';
 
 /* HEADER */
 headerSection('#header');
-const mainHeaderDOM = document.querySelector('.main-header');
-
-addEventListener('scroll', function () {
-  const headerPosition = 150;
-  if (scrollY > headerPosition) {
-    mainHeaderDOM.classList.add('shadow');
-  } else {
-    mainHeaderDOM.classList.remove('shadow');
-  }
-});
 /* enf of HEADER */
 
 /* Hero (hero section) */
@@ -49,6 +43,8 @@ servicesSection('#services');
 /* end of OfferedService */
 
 /* NumbersCounter */
+numbersList('#numberCounter', numbers);
+
 // numbersCounterContainer('#numberCounter');
 /* end of NumbersCounter */
 

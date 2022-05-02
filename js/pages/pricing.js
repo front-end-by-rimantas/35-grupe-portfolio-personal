@@ -7,16 +7,6 @@ import { pageNameSection } from '../components/sections/pageNameSection.js';
 
 /* HEADER */
 headerSection('#header');
-const mainHeaderDOM = document.querySelector('.main-header');
-
-addEventListener('scroll', function () {
-  const headerPosition = 150;
-  if (scrollY > headerPosition) {
-    mainHeaderDOM.classList.add('shadow');
-  } else {
-    mainHeaderDOM.classList.remove('shadow');
-  }
-});
 /* enf of HEADER */
 
 /* Name of page */
