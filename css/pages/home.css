@@ -9,15 +9,18 @@
 @import '../components/form.css';
 @import '../components/hover.css';
 @import '../components/heading.css';
+@import '../components/heading-hover.css';
+/* sections */
+@import '../components/carousel.css';
 @import '../components/header.css';
 @import '../components/hero.css';
 @import '../components/aboutMe.css';
 @import '../components/services.css';
-@import '../components/heading-hover.css';
 @import '../components/featuredProjects.css';
 @import '../components/plan.css';
 @import '../components/blog.css';
 @import '../components/footer.css';
+
 
 /* CUSTOM STYLE GOES BELOW THIS COMMENT LINE */
 
@@ -50,6 +53,7 @@
 /* end of LatestPost */
 
 /* Sponsors */
+@import '../components/sponsors.css';
 /* end of Sponsors */
 
 /* FOOTER */

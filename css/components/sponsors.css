@@ -1,0 +1,13 @@
+#sponsors {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#sponsors img {
+  opacity: 40%;
+  cursor: pointer;
+}
+#sponsors img:hover {
+  opacity: 100%;
+  transition: all 0.5s ease-in-out;
+}
