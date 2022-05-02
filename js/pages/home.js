@@ -14,6 +14,8 @@ import { headerSection } from '../components/sections/headerSection.js';
 // import { headerSection } from '../components/sections/headerSection.js';
 import { aboutSection } from '../components/sections/aboutSection.js';
 // import { numbersCounterContainer } from '../components/sections/numberCounterSection.js';
+
+
 import { testimonialsSection } from '../components/sections/testimonialsSection.js';
 import { sponsorsSection } from '../components/sections/sponsorsSection.js';
 import { footerSection } from '../components/sections/footerSection.js';
