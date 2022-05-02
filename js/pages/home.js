@@ -7,21 +7,18 @@ import { plansData } from '../data/plansData.js';
 
 import { numbersList } from '../components/numbersList/numbersList.js';
 import { numbers } from '../data/numbers.js';
-
 import { heroSection } from '../components/sections/heroSection.js';
 import { headerSection } from '../components/sections/headerSection.js';
 
-
 // import { heroSection } from '../components/sections/heroSection.js'
 // import { headerSection } from '../components/sections/headerSection.js';
-import { aboutSection } from "../components/sections/aboutSection.js";
+import { aboutSection } from '../components/sections/aboutSection.js';
 // import { numbersCounterContainer } from '../components/sections/numberCounterSection.js';
-
-import { testimonialsSection } from '../components/sections/testimonialsSection.js'
-import { sponsorsSection } from '../components/sections/sponsorsSection.js'
+import { testimonialsSection } from '../components/sections/testimonialsSection.js';
+import { sponsorsSection } from '../components/sections/sponsorsSection.js';
 import { footerSection } from '../components/sections/footerSection.js';
-import { projectsSection } from '../components/sections/projectsSection.js'
-import { plansSection } from '../components/sections/plansSection.js'
+import { projectsSection } from '../components/sections/projectsSection.js';
+import { plansSection } from '../components/sections/plansSection.js';
 import { servicesSection } from '../components/sections/serviceSection.js';
 import { postsSection } from '../components/sections/postsSection.js';
 
