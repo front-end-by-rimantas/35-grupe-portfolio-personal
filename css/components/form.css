@@ -29,6 +29,7 @@
   flex-flow: column wrap;
   gap: 20px;
   max-height: 335px;
+  max-width: 610px;
 }
 .form input,
 .form textarea {
