@@ -9,3 +9,18 @@
   background: var(--gradient);
   color: var(--secondary-color);
 }
+.contact-btn {
+  padding: 0 27px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 42px;
+  text-transform: uppercase;
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: all 0.3s ease-out;
+}
+.contact-btn:hover {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
