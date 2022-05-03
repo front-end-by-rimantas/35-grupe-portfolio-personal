@@ -20,14 +20,13 @@ const numbersCounterContainer = (selector) => {
   };
 
   const counter = (items) => {
-    calculated = true;
     if (scrollY > 1200 && scrollY < 1300) {
-      const myArr = Array(items.length).fill(0);
+      const myArr = Array(numbers.length).fill(0);
       const newArr = myArr.map((val, index) => {
         return numbers[index].number;
       });
       for (let i = 0; i <= Math.max(...newArr); i++) {
-        for (let ii = 0; ii < items.length; ii++) {
+        for (let ii = 0; ii < numbers.length; ii++) {
           setTimeout(renderNumbers(items, i, ii, newArr), 10);
         }
       }
