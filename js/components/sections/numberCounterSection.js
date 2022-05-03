@@ -20,18 +20,21 @@ const numbersCounterContainer = (selector) => {
   };
 
   const counter = (items) => {
-    const myArr = Array(items.length).fill(0);
-    const newArr = myArr.map((a, b) => {
-      return items[b].innerText;
-    });
-    for (let i = 0; i <= Math.max(...newArr); i++) {
-      for (let ii = 0; ii < items.length; ii++) {
-        setTimeout(renderNumbers(items, i, ii, newArr), 10);
+    calculated = true;
+    if (scrollY > 1200 && scrollY < 1300) {
+      const myArr = Array(items.length).fill(0);
+      const newArr = myArr.map((val, index) => {
+        return numbers[index].number;
+      });
+      for (let i = 0; i <= Math.max(...newArr); i++) {
+        for (let ii = 0; ii < items.length; ii++) {
+          setTimeout(renderNumbers(items, i, ii, newArr), 10);
+        }
       }
     }
   };
 
-  counter(DOM.querySelectorAll('h2'));
+  addEventListener('scroll', () => counter(DOM.querySelectorAll('h2')));
 };
 
 export { numbersCounterContainer };
