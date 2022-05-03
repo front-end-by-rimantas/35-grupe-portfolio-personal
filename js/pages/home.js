@@ -1,5 +1,4 @@
 // component imports
-
 import { heroSection } from '../components/sections/heroSection.js';
 import { headerSection } from '../components/sections/headerSection.js';
 import { aboutSection } from '../components/sections/aboutSection.js';

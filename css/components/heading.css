@@ -62,7 +62,7 @@ p.section-description.about-me {
 
 .section-headline {
   font-size: 14px;
-  weight: 400px;
+  font-weight: 400;
 }
 .section-headline.uppercase {
   text-transform: uppercase;
