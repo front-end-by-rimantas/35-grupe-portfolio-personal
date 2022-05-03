@@ -2,7 +2,7 @@ import { featuredProjectsList } from '../../components/featuredProjectsList.js/f
 import { featuredProjectsData } from '../../data/featuredProjectsData.js';
 
 const projectsSection = (selector) => {
-  const DOM = document.querySelector(selector)
+  const DOM = document.querySelector(selector);
   let imgPath = '';
   if (document.URL.includes('pages')) {
     imgPath = '../.';
@@ -26,7 +26,11 @@ const projectsSection = (selector) => {
         <a class="sub-header filter" href="#projects">PRINTING</a>
       </div>
     </div>
-    <div id="featuredProjects_block" class="row">${featuredProjectsList('#featuredProjects_block', featuredProjectsData, imgPath)}</div> `;
+    <div id="featuredProjects_block" class="row">${featuredProjectsList(
+      '#featuredProjects_block',
+      featuredProjectsData,
+      imgPath
+    )}</div> `;
 
   // const animationAdd = (block) => {
   //   block.classList.add('animation');
@@ -34,13 +38,16 @@ const projectsSection = (selector) => {
   //   block.classList.remove('animation');
   //   }, 500);
   // };
-  
-  const elementsList =  document.getElementsByClassName("filter");
+
+  const elementsList = document.getElementsByClassName('filter');
   for (let i = 0; i < elementsList.length; i++) {
-    elementsList[i].addEventListener("click", function() {
-      const dabartinis = document.getElementsByClassName("active-filter");
-      dabartinis[0].className = dabartinis[0].className.replace("active-filter", "");
-      this.className += " active-filter";
+    elementsList[i].addEventListener('click', function () {
+      const dabartinis = document.getElementsByClassName('active-filter');
+      dabartinis[0].className = dabartinis[0].className.replace(
+        'active-filter',
+        ''
+      );
+      this.className += ' active-filter';
 
       function projectsFilter(card) {
         const featurai = document.getElementsByClassName('filter-card');
@@ -58,7 +65,7 @@ const projectsSection = (selector) => {
         }
       }
 
-      const aktyvus = document.querySelector(".active-filter");
+      const aktyvus = document.querySelector('.active-filter');
       if (aktyvus.innerHTML.includes('VECTOR')) {
         projectsFilter('vector');
       } else if (aktyvus.innerHTML.includes('RASTER')) {
@@ -76,6 +83,6 @@ const projectsSection = (selector) => {
       }
     });
   }
-}
+};
 
-export { projectsSection }
+export { projectsSection };

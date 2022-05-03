@@ -1,5 +1,12 @@
+import { testimonialsList } from '../../components/testimonialsList/testimonialsList.js';
+import { testimonialsData } from '../../data/testimonialsData.js';
+
 const testimonialsSection = (selector) => {
   const DOM = document.querySelector(selector);
+  let imgPath = '';
+  if (document.URL.includes('pages')) {
+    imgPath = '../.';
+  }
   DOM.innerHTML = `
       <div class="row">
         <div class="col-12 col-md-10 col-lg-8 ml-md-1 ml-lg-2 center">
@@ -9,7 +16,11 @@ const testimonialsSection = (selector) => {
             it. Ask any chain smoker or even a person.
           </p>
         </div>
-        <div class="col-12">SLIDER/CAROUSEL</div>
-      </div>`
-}
-export { testimonialsSection }
+        <div class="col-12 testimonials-slider-content">${testimonialsList(
+          '#testimonials_block',
+          testimonialsData,
+          imgPath
+        )}</div>
+      </div>`;
+};
+export { testimonialsSection };
