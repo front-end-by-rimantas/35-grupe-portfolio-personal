@@ -2,6 +2,7 @@
 import { headerSection } from '../components/sections/headerSection.js'
 import { footerSection } from '../components/sections/footerSection.js'
 import { plansSection } from '../components/sections/plansSection.js'
+import { FAQSection } from '../components/sections/FAQSection.js';
 import { pageNameSection } from '../components/sections/pageNameSection.js';
 // components execution
 
@@ -18,6 +19,7 @@ plansSection('#plans');
 /* end of Plans */
 
 /* Frequently Asked Questions  */
+FAQSection('#FAQ');
 /* Frequently Asked Questions end  */
 
 /* FOOTER  */
