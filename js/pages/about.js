@@ -2,8 +2,8 @@
 import { aboutSection } from '../components/sections/aboutSection.js';
 import { footerSection } from '../components/sections/footerSection.js';
 import { headerSection } from '../components/sections/headerSection.js';
-import { testimonialsSection } from '../components/sections/testimonialsSection.js'
-import { sponsorsSection } from '../components/sections/sponsorsSection.js'
+import { testimonialsSection } from '../components/sections/testimonialsSection.js';
+import { sponsorsSection } from '../components/sections/sponsorsSection.js';
 import { pageNameSection } from '../components/sections/pageNameSection.js';
 // components execution
 
@@ -29,7 +29,6 @@ aboutSection('#about');
 /* My Qualifications end  */
 
 /* Testimonials  */
-testimonialsSection('#testimonials');
 /* end of Testimonials  */
 
 /* Sponsors  */

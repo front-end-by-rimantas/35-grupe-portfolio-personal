@@ -22,6 +22,7 @@
 
 .section-title.page-name {
   font-size: 48px;
+  margin: 0;
 }
 
 p.section-description {
@@ -61,7 +62,7 @@ p.section-description.about-me {
 
 .section-headline {
   font-size: 14px;
-  weight: 400px;
+  font-weight: 400;
 }
 .section-headline.uppercase {
   text-transform: uppercase;

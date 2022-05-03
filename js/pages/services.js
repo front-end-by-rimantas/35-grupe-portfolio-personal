@@ -14,7 +14,7 @@ import { footerSection } from '../components/sections/footerSection.js';
 import { numbersCounterContainer } from '../components/sections/numberCounterSection.js';
 import { plansSection } from '../components/sections/plansSection.js';
 import { testimonialsSection } from '../components/sections/testimonialsSection.js';
-import { servicesSection } from '../components/sections/serviceSection.js'
+import { servicesSection } from '../components/sections/serviceSection.js';
 import { pageNameSection } from '../components/sections/pageNameSection.js';
 // components execution
 
