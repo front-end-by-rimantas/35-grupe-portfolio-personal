@@ -159,10 +159,12 @@ progress {
   }
   .qualifications-row {
     justify-content: flex-end;
-    }
+  }
   .qualifications-row:nth-child(even) {
     flex-direction: row-reverse;
   }
+}
+
 /* My Qualifications end  */
 
 /* Testimonials  */

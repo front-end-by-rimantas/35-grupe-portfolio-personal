@@ -1,21 +1,21 @@
 .testimonials-slider-content {
   display: flex;
   position: relative;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
 }
 
 .testimonials-card {
   overflow: hidden;
-  margin: 20px;
-  background-color: var(--secondary-color);
 }
 
 .testimonials-content {
+  margin-right: 10px;
+  background-color: var(--secondary-color);
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  padding: 25px 30px 12px 30px;
+  padding: 25px 20px 12px 20px;
 }
 
 .testimonials-content:hover .section-smaller {
@@ -36,16 +36,18 @@
 .testimonials-actions {
   position: absolute;
   bottom: -45px;
-  right: 45%;
+  right: 50%;
+  transform: translateX(50%);
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1150px) {
   .testimonials-actions {
-    right: -45px;
-    top: 40%;
+    bottom: 50%;
+    transform: translateY(50%);
+    right: -40px;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1150px) {
   .carousel-btn {
     display: block;
   }
@@ -55,6 +57,7 @@
   background-color: var(--secondary-color);
   box-shadow: -10px 10px 30px 0px rgb(203, 202, 202);
   border: 0.5px solid var(--secondary-color);
+  height: 50px;
 }
 .carousel-btn:hover {
   background-color: var(--primary-color);
