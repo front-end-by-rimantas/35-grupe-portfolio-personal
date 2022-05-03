@@ -1,7 +1,6 @@
-.container.pad,
-.container.map {
-  padding-top: 0;
-  padding-bottom: 40px;
+section.container.pad,
+section.container.map {
+  padding: 30px 0;
   background-color: var(--third-color);
 }
 .contact {
@@ -29,8 +28,10 @@
   display: flex;
   flex-flow: column wrap;
   gap: 20px;
+  height: 100%;
   max-height: 335px;
   max-width: 720px;
+  margin-bottom: 60px;
 }
 .form input,
 .form textarea {
@@ -51,15 +52,21 @@
   min-width: 100%;
   max-width: 290px;
   min-height: 190px;
+  max-height: 250px;
+  resize: vertical;
   font-family: 'Poppins', sans-serif;
 }
 .contact-btn {
   margin-top: 20px;
 }
 @media (max-width: 991px) {
+  section.container.pad,
+  section.container.map {
+    padding: 0;
+  }
   .form {
     flex-wrap: nowrap;
-    margin-bottom: 180px;
+    margin-bottom: 220px;
   }
   .form input,
   .form textarea,
