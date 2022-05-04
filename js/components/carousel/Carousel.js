@@ -1,12 +1,15 @@
 import { SponsorCard } from './SponsorCard.js';
+import { TestimonialCard } from './Testimonials.js';
+
 class Carousel {
   constructor(data, cardClass, section, settings) {
     this.cardClass = cardClass;
     this.data = data;
     this.settings = settings;
     this.size = { mobile: 1, tablet: 2, desktop: 5 };
-    this.previousNext = false;
+    // this.previousNext = false;
     this.listLength = 0;
+    this.currVisibleIndex = 0;
     this.fullListHTML = '';
     this.section = section;
 
@@ -78,7 +81,9 @@ class Carousel {
       ...this.data.list,
       ...this.data.list.slice(0, maxImgInPage),
     ];
+
     this.listLength = list.length;
+    this.currVisibleIndex = this.size.desktop;
     for (let i = 0; i < list.length; i++) {
       if (this.section === 'sponsor') {
         html += new SponsorCard(
@@ -86,12 +91,42 @@ class Carousel {
           this.data.imgPath + list[i].alt,
           list.length
         ).render();
+      }
+      if (this.section === 'testimonials') {
+        html += new TestimonialCard(
+          this.data.imgPath,
+          list[i].picture,
+          list[i].text,
+          list[i].feedbackProvider,
+          list[i].job,
+        ).render();
       } else {
         console.log('Need to choose section card');
       }
     }
     this.fullListHTML = html;
   }
+
+  // actionsHTML() {
+  //   if (!this.previousNext) {
+  //     return '';
+  //   }
+  //   let arrowUpHTML = '';
+  //   let arrowDownHTML = '';
+
+  //   if (this.previousNext) {
+  //     arrowUpHTML = '<span class="lnr lnr-arrow-up carousel-btn"></span>';
+  //     arrowDownHTML = '<span class="lnr lnr-arrow-down carousel-btn"></span>';
+  //   }
+  //   return `<div class="testimonials-actions">
+  //              ${arrowUpHTML}
+  //              ${arrowDownHTML}
+  //           </div>`
+  // }
+  // render() {
+  //   const HTML = this.listHTML + this.actionsHTML();
+  //   this.fullListHTML = HTML;
+  // }
 }
 
 export { Carousel };
